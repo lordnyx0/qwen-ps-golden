@@ -1,0 +1,25 @@
+# s8c-golden.yml — coleta S8c (bash: 29 singles + 48 stories) em runner descartavel.
+# Disparo manual (Actions > s8c-golden > Run workflow). Nada executa no host do dev.
+# Artefato: s8b_bash_results.jsonl (consolidado junto ao S8b na etapa local).
+name: s8c-golden
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  bash-golden:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/golden
+          sparse-checkout-cone-mode: false
+      - name: Collect S8c bash goldens
+        shell: bash
+        run: python3 .github/golden/collect-bash.py --calls .github/golden/s8c/bash_calls.jsonl --out .github/golden/out/s8c_bash_results.jsonl
+      - uses: actions/upload-artifact@v4
+        with:
+          name: s8c_bash_results
+          path: .github/golden/out/s8c_bash_results.jsonl
+          retention-days: 30

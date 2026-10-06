@@ -1,0 +1,396 @@
+{"uuid": "s5_ps_0001", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'spooler'"}}
+{"uuid": "s5_ps_0001", "idx": 1, "tool": "powershell", "arguments": {"command": "Start-Service -Name 'spooler'; Get-Service -Name 'spooler'"}}
+{"uuid": "s5_ps_0002", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-PSDrive -Name 'C'"}}
+{"uuid": "s5_ps_0002", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-ChildItem -Path 'C:\\temp' -Recurse | Sort-Object Length -Descending | Select-Object -First 3"}}
+{"uuid": "s5_ps_0003", "idx": 0, "tool": "powershell", "arguments": {"command": "Resolve-DnsName -Name 'intranet.local'"}}
+{"uuid": "s5_ps_0003", "idx": 1, "tool": "powershell", "arguments": {"command": "Clear-DnsClientCache; Resolve-DnsName -Name 'intranet.local'"}}
+{"uuid": "s5_ps_0004", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-EventLog -LogName 'System' -Newest 5"}}
+{"uuid": "s5_ps_0004", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-EventLog -LogName 'System' -Newest 50 | Select-String -Pattern 'Error'"}}
+{"uuid": "s5_ps_0005", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run'"}}
+{"uuid": "s5_ps_0005", "idx": 1, "tool": "powershell", "arguments": {"command": "New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run' -Name 'Updater' -Value 'C:\\Tools\\updater.exe'"}}
+{"uuid": "s5_ps3_0004", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-NetFirewallRule -DisplayName 'AppSync2'"}}
+{"uuid": "s5_ps3_0004", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-NetFirewallRule -DisplayName 'AppSync'; Set-NetFirewallRule -DisplayName 'AppSync' -Action Allow"}}
+{"uuid": "s5_ps3_0004", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-NetFirewallRule -DisplayName 'AppSync'"}}
+{"uuid": "s5_ps3_0005", "idx": 0, "tool": "powershell", "arguments": {"command": "w32tm /query /status"}}
+{"uuid": "s5_ps3_0005", "idx": 1, "tool": "powershell", "arguments": {"command": "w32tm /resync"}}
+{"uuid": "s5_ps3_0005", "idx": 2, "tool": "powershell", "arguments": {"command": "w32tm /resync; w32tm /query /status"}}
+{"uuid": "s5_b04p_0001", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Process -Name 'chrome' | Sort-Object WS -Descending | Select-Object Id, ProcessName, WS, CPU -First 5"}}
+{"uuid": "s5_b04p_0001", "idx": 1, "tool": "powershell", "arguments": {"command": "Stop-Process -Id 12480 -Force"}}
+{"uuid": "s5_b04p_0001", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Process -Name 'chrome' | Measure-Object -Property WS -Sum"}}
+{"uuid": "s5_b04p_0002", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-NetAdapter -Name 'Wi-Fi'"}}
+{"uuid": "s5_b04p_0002", "idx": 1, "tool": "powershell", "arguments": {"command": "Enable-NetAdapter -Name 'Wi-Fi' -Confirm:$false"}}
+{"uuid": "s5_b04p_0002", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-NetAdapter -Name 'Wi-Fi' | Select-Object Name, Status, LinkSpeed"}}
+{"uuid": "t_cal_23a", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'bits'"}}
+{"uuid": "t_cal_24a", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Process | Sort-Object CPU -Descending | Select-Object -First 1"}}
+{"uuid": "t_cal_26a", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ChildItem -Path 'C:/Logs'"}}
+{"uuid": "t_cmd_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Service"}}
+{"uuid": "t_cmd_02", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Process | Sort-Object WS -Descending | Select-Object -First 1"}}
+{"uuid": "t_cmd_03", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ChildItem -Path 'C:/Windows/Temp'"}}
+{"uuid": "t_cmd_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-EventLog -LogName System -Newest 10"}}
+{"uuid": "t_cmd_05", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-NetAdapter"}}
+{"uuid": "t_cmd_06", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ScheduledTask | Where-Object {$_.TaskName -like '*backup*'}"}}
+{"uuid": "t_cmd_07", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-LocalUser"}}
+{"uuid": "t_cmd_08", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-TimeZone"}}
+{"uuid": "t_cmd_09", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-NetFirewallRule | Where-Object {$_.LocalPort -eq 443}"}}
+{"uuid": "t_cmd_10", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ComputerInfo -Property WindowsBuildLabEx"}}
+{"uuid": "t_cmd_11", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-PSDrive C"}}
+{"uuid": "t_cmd_12", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-HotFix"}}
+{"uuid": "t_cmd_13", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Printer | Where-Object {$_.Default -eq $true}"}}
+{"uuid": "t_cmd_14", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Module"}}
+{"uuid": "t_cmd_15", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-History -Count 5"}}
+{"uuid": "t_cmd_16", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Date"}}
+{"uuid": "t_cmd_17", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Content -Path 'C:/app/version.txt'"}}
+{"uuid": "t_cmd_18", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Location"}}
+{"uuid": "t_cmd_19", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Command -Name '*Service*'"}}
+{"uuid": "t_cmd_20", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Uptime"}}
+{"uuid": "s5_b06_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Process | Sort-Object WS -Descending | Select-Object -First 1"}}
+{"uuid": "s5_b06_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "Stop-Process -Name chrome -Force"}}
+{"uuid": "s5_b06_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Process chrome -ErrorAction SilentlyContinue"}}
+{"uuid": "s5_b06_ps_02", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-PSDrive C | Select-Object Used, Free"}}
+{"uuid": "s5_b06_ps_02", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-ChildItem C:/ -Directory | ForEach-Object { $s=(Get-ChildItem $_.FullName -Recurse -ErrorAction SilentlyContinue | Measure-Object Length -Sum).Sum; [pscustomobject]@{N=$_.Name;GB=[math]::Round($s/1GB,1)} } | Sort-Object GB -Descending | Select-Object -First 3"}}
+{"uuid": "s5_b06_ps_02", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-ChildItem C:/Windows/Temp | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b06_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-EventLog -LogName System -Newest 50 | Where-Object {$_.EntryType -eq 'Error'}"}}
+{"uuid": "s5_b06_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-EventLog -LogName System -Newest 50 | Where-Object {$_.Source -eq 'disk'} | Select-Object -ExpandProperty Message"}}
+{"uuid": "s5_b06_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-PhysicalDisk | Select-Object FriendlyName, HealthStatus"}}
+{"uuid": "s5_b07_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'spooler'"}}
+{"uuid": "s5_b07_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "Restart-Service -Name 'spooler' -Force"}}
+{"uuid": "s5_b07_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'spooler'"}}
+{"uuid": "s5_b07_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Printer | Select-Object Name, Default"}}
+{"uuid": "s5_b07_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "Set-Printer -Name 'LaserJet-4' -IsDefault $true"}}
+{"uuid": "s5_b07_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Printer -Name 'LaserJet-4'"}}
+{"uuid": "s5_b08_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-MpComputerStatus | Select-Object -ExpandProperty RealTimeProtectionEnabled"}}
+{"uuid": "s5_b08_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-MpComputerStatus | Select-Object AMServiceVersion"}}
+{"uuid": "s5_b08_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-MpThreatDetection | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b08_ps_02", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-WindowsUpdate -Category 'Security' -ErrorAction SilentlyContinue | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b08_ps_02", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-HotFix | Sort-Object InstalledOn -Descending | Select-Object -First 2"}}
+{"uuid": "s5_b08_ps_02", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-WURebootStatus -ErrorAction SilentlyContinue"}}
+{"uuid": "s5_b08_ps_03", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-NetConnectionProfile -InterfaceAlias 'Ethernet0'"}}
+{"uuid": "s5_b08_ps_03", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-NetAdapter -Name 'Ethernet0' | Select-Object Status, LinkSpeed"}}
+{"uuid": "s5_b08_ps_03", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-DnsClientServerAddress -InterfaceAlias 'Ethernet0'"}}
+{"uuid": "s5_b08_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-LocalGroupMember -Group 'Administrators'"}}
+{"uuid": "s5_b08_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-LocalUser | Where-Object {$_.Enabled -eq $true} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b08_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-LocalGroup | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b08_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ChildItem C:/Windows/Temp -Recurse -ErrorAction SilentlyContinue | Where-Object {$_.LastWriteTime -lt (Get-Date).AddDays(-7)} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b08_ps_05", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-ChildItem C:/Windows/Temp -Recurse -ErrorAction SilentlyContinue | Measure-Object Length -Sum | Select-Object -ExpandProperty Sum"}}
+{"uuid": "s5_b08_ps_05", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-PSDrive C | Select-Object Used, Free"}}
+{"uuid": "s5_b09_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-WebAppPoolState -Name 'api' -ErrorAction SilentlyContinue"}}
+{"uuid": "s5_b09_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "Start-WebAppPool -Name 'api'"}}
+{"uuid": "s5_b09_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-WebAppPoolState -Name 'api'"}}
+{"uuid": "s5_b09_ps_02", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ExecutionPolicy -List"}}
+{"uuid": "s5_b09_ps_02", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-ExecutionPolicy"}}
+{"uuid": "s5_b09_ps_02", "idx": 2, "tool": "powershell", "arguments": {"command": "$PSVersionTable.PSVersion"}}
+{"uuid": "s5_b09_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-MpThreatDetection | Sort-Object InitialDetectionTime -Descending | Select-Object -First 1"}}
+{"uuid": "s5_b09_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-MpComputerStatus | Select-Object -ExpandProperty QuickScanAge"}}
+{"uuid": "s5_b09_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-MpPreference | Select-Object -ExpandProperty ScanScheduleDay"}}
+{"uuid": "s5_b09_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-SmbShare | Select-Object Name, Path"}}
+{"uuid": "s5_b09_ps_05", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-SmbShareAccess -Name 'backups'"}}
+{"uuid": "s5_b09_ps_05", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-SmbServerConfiguration | Select-Object -ExpandProperty EnableSMB2Protocol"}}
+{"uuid": "s5_b10_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'spooler' | Select-Object -ExpandProperty StartType"}}
+{"uuid": "s5_b10_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "sc.exe qfailure spooler"}}
+{"uuid": "s5_b10_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'spooler' | Select-Object Status"}}
+{"uuid": "s5_b10_ps_02", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'bthserv'"}}
+{"uuid": "s5_b10_ps_02", "idx": 1, "tool": "powershell", "arguments": {"command": "Set-Service -Name 'bthserv' -StartupType Manual"}}
+{"uuid": "s5_b10_ps_02", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'bthserv' | Select-Object Status, StartType"}}
+{"uuid": "s5_b10_ps_03", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-NetFirewallProfile | Select-Object Name, Enabled"}}
+{"uuid": "s5_b10_ps_03", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-NetFirewallProfile -Name Public | Select-Object DefaultInboundAction"}}
+{"uuid": "s5_b10_ps_03", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-NetFirewallRule -Enabled True | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b10_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ComputerRestorePoint | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b10_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-ComputerRestorePoint | Sort-Object CreationTime -Descending | Select-Object -First 1"}}
+{"uuid": "s5_b10_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "vssadmin list shadowstorage"}}
+{"uuid": "s5_b10_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'vmms' -ErrorAction SilentlyContinue"}}
+{"uuid": "s5_b10_ps_05", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-VM | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b10_ps_05", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-VM | Where-Object {$_.State -eq 'Running'} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b11_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Volume -DriveLetter C | Select-Object Size, SizeRemaining, HealthStatus"}}
+{"uuid": "s5_b11_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Disk | Select-Object Number, Size, HealthStatus"}}
+{"uuid": "s5_b11_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Partition -DriveLetter C | Select-Object Type"}}
+{"uuid": "s5_b11_ps_02", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-WinEvent -LogName Application -MaxEvents 50 | Where-Object {$_.LevelDisplayName -eq 'Error'} | Select-Object -First 3"}}
+{"uuid": "s5_b11_ps_02", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-WinEvent -ListLog Application | Select-Object RecordCount"}}
+{"uuid": "s5_b11_ps_02", "idx": 2, "tool": "powershell", "arguments": {"command": "wevtutil gl Application | Select-String maxSize"}}
+{"uuid": "s5_b11_ps_03", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Counter '\\Processor(_Total)\\% Processor Time' -SampleInterval 1 -MaxSamples 5 | Select-Object -ExpandProperty CounterSamples | Measure-Object CookedValue -Average | Select-Object -ExpandProperty Average"}}
+{"uuid": "s5_b11_ps_03", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Counter '\\Memory\\Available MBytes' | Select-Object -ExpandProperty CounterSamples | Select-Object -ExpandProperty CookedValue"}}
+{"uuid": "s5_b11_ps_03", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-ComputerInfo | Select-Object -ExpandProperty CsNumberOfLogicalProcessors"}}
+{"uuid": "s5_b11_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ComputerInfo | Select-Object WindowsInstallDate, OsLastBootUpTime"}}
+{"uuid": "s5_b11_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "systeminfo | Select-String 'System Boot Time'"}}
+{"uuid": "s5_b11_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-HotFix | Sort-Object InstalledOn -Descending | Select-Object -First 1"}}
+{"uuid": "s5_b11_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Service | Where-Object {$_.StartType -eq 'Automatic' -and $_.Status -ne 'Running'} | Select-Object Name"}}
+{"uuid": "s5_b11_ps_05", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'spooler' | Start-Service -PassThru | Select-Object Status"}}
+{"uuid": "s5_b11_ps_05", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Service | Where-Object {$_.StartType -eq 'Automatic' -and $_.Status -ne 'Running'} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b12_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-AppxPackage -AllUsers | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b12_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-AppxPackage -AllUsers | Select-Object Name -First 3"}}
+{"uuid": "s5_b12_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-AppxPackage -Name '*Xbox*' -AllUsers | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b12_ps_02", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-PSRepository | Select-Object Name, InstallationPolicy"}}
+{"uuid": "s5_b12_ps_02", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-InstalledModule | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b12_ps_02", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-InstalledModule -Name 'Az.Accounts' -ErrorAction SilentlyContinue | Select-Object Version"}}
+{"uuid": "s5_b12_ps_03", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ItemProperty 'HKLM:/SYSTEM/CurrentControlSet/Control/Session Manager' -Name PendingFileRenameOperations -ErrorAction SilentlyContinue | Select-Object -ExpandProperty PendingFileRenameOperations"}}
+{"uuid": "s5_b12_ps_03", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-ItemProperty 'HKLM:/SYSTEM/CurrentControlSet/Control/Session Manager' | Select-Object -ExpandProperty PendingFileRenameOperations | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b12_ps_03", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-ComputerInfo | Select-Object -ExpandProperty WindowsInstallDate"}}
+{"uuid": "s5_b12_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Tpm | Select-Object TpmPresent, TpmReady"}}
+{"uuid": "s5_b12_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Tpm | Select-Object -ExpandProperty ManufacturerVersion"}}
+{"uuid": "s5_b12_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "Confirm-SecureBootUEFI"}}
+{"uuid": "s5_b12_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "powercfg /batteryreport /output C:/batt.html | Out-Null; Get-Content C:/batt.html | Select-String 'Design Capacity' | Select-Object -First 1"}}
+{"uuid": "s5_b12_ps_05", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-WmiObject -Class BatteryStatus -Namespace root/wmi | Select-Object -ExpandProperty RemainingCapacity"}}
+{"uuid": "s5_b12_ps_05", "idx": 2, "tool": "powershell", "arguments": {"command": "Remove-Item C:/batt.html -Force"}}
+{"uuid": "s5_b13_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Test-Connection -ComputerName 10.0.0.1 -Count 2 -Quiet"}}
+{"uuid": "s5_b13_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "Test-Connection -ComputerName 10.0.0.1 -Count 4 | Measure-Object ResponseTime -Average | Select-Object -ExpandProperty Average"}}
+{"uuid": "s5_b13_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-NetRoute -DestinationPrefix '0.0.0.0/0' | Select-Object NextHop"}}
+{"uuid": "s5_b13_ps_02", "idx": 0, "tool": "powershell", "arguments": {"command": "Resolve-DnsName api.acme.org -Type A | Select-Object -ExpandProperty IPAddress"}}
+{"uuid": "s5_b13_ps_02", "idx": 1, "tool": "powershell", "arguments": {"command": "Resolve-DnsName 93.184.216.34 -Type PTR | Select-Object -ExpandProperty NameHost"}}
+{"uuid": "s5_b13_ps_02", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-DnsClientServerAddress -AddressFamily IPv4 | Select-Object -ExpandProperty ServerAddresses | Select-Object -Unique"}}
+{"uuid": "s5_b13_ps_03", "idx": 0, "tool": "powershell", "arguments": {"command": "Test-NetConnection -ComputerName api.acme.org -Port 443 | Select-Object TcpTestSucceeded"}}
+{"uuid": "s5_b13_ps_03", "idx": 1, "tool": "powershell", "arguments": {"command": "Test-NetConnection -ComputerName api.acme.org -Port 443 | Select-Object -ExpandProperty RemoteAddress | Select-Object -ExpandProperty IPAddressToString"}}
+{"uuid": "s5_b13_ps_03", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-NetTCPConnection -RemotePort 443 | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b13_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-NetRoute -DestinationPrefix '0.0.0.0/0' | Select-Object NextHop, InterfaceAlias"}}
+{"uuid": "s5_b13_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias 'Ethernet0' | Select-Object -ExpandProperty IPAddress"}}
+{"uuid": "s5_b13_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-NetAdapter -Name 'Ethernet0' | Select-Object Status"}}
+{"uuid": "s5_b13_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-NetNeighbor -AddressFamily IPv4 | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b13_ps_05", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-NetNeighbor -IPAddress 10.0.0.1 | Select-Object State"}}
+{"uuid": "s5_b13_ps_05", "idx": 2, "tool": "powershell", "arguments": {"command": "arp -a | Select-String '10.0.0.1' | Select-Object -First 1"}}
+{"uuid": "s5_b14_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-LocalUser | Where-Object {$_.LastLogon -eq $null} | Select-Object Name"}}
+{"uuid": "s5_b14_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-LocalUser -Name 'svc-backup' | Select-Object Enabled"}}
+{"uuid": "s5_b14_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "net user | Select-String svc"}}
+{"uuid": "s5_b14_ps_02", "idx": 0, "tool": "powershell", "arguments": {"command": "net accounts | Select-String 'Maximum password age'"}}
+{"uuid": "s5_b14_ps_02", "idx": 1, "tool": "powershell", "arguments": {"command": "net accounts | Select-String 'Minimum password length'"}}
+{"uuid": "s5_b14_ps_02", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-LocalUser -Name 'boss' | Select-Object PasswordExpires"}}
+{"uuid": "s5_b14_ps_03", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-SmbSession | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b14_ps_03", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-SmbSession | Select-Object ClientComputerName -First 3"}}
+{"uuid": "s5_b14_ps_03", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-SmbOpenFile | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b14_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "quser"}}
+{"uuid": "s5_b14_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "qwinsta | Select-String Active"}}
+{"uuid": "s5_b14_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Process -Name explorer -ErrorAction SilentlyContinue | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b14_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "net statistics workstation | Select-String 'since'"}}
+{"uuid": "s5_b14_ps_05", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-NetAdapterStatistics -Name 'Ethernet0' | Select-Object ReceivedBytes"}}
+{"uuid": "s5_b14_ps_05", "idx": 2, "tool": "powershell", "arguments": {"command": "net session | Measure-Object -Line | Select-Object -ExpandProperty Lines"}}
+{"uuid": "s5_b15_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ItemProperty 'HKLM:/SYSTEM/CurrentControlSet/Control/Terminal Server/WinStations/RDP-Tcp' -Name PortNumber | Select-Object -ExpandProperty PortNumber"}}
+{"uuid": "s5_b15_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'TermService' | Select-Object Status"}}
+{"uuid": "s5_b15_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-NetTCPConnection -LocalPort 3389 -ErrorAction SilentlyContinue | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b15_ps_02", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_PageFileUsage | Select-Object AllocatedBaseSize"}}
+{"uuid": "s5_b15_ps_02", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_ComputerSystem | Select-Object -ExpandProperty TotalPhysicalMemory"}}
+{"uuid": "s5_b15_ps_02", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_PageFileSetting | Select-Object -ExpandProperty AutomaticManagedPagefile"}}
+{"uuid": "s5_b15_ps_03", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-HotFix | Sort-Object InstalledOn -Descending | Select-Object -First 1 -ExpandProperty InstalledOn"}}
+{"uuid": "s5_b15_ps_03", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-WindowsUpdateLog -ErrorAction SilentlyContinue | Select-String 'successfully installed' | Select-Object -Last 1"}}
+{"uuid": "s5_b15_ps_03", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'wuauserv' | Select-Object Status"}}
+{"uuid": "s5_b15_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-VMSwitch | Select-Object Name, SwitchType"}}
+{"uuid": "s5_b15_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-VMNetworkAdapterVlan -VMName 'web-01' -ErrorAction SilentlyContinue | Select-Object AccessVlanId"}}
+{"uuid": "s5_b15_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-VM 'web-01' -ErrorAction SilentlyContinue | Select-Object State"}}
+{"uuid": "s5_b15_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-DnsClientGlobalSetting | Select-Object -ExpandProperty SuffixSearchList"}}
+{"uuid": "s5_b15_ps_05", "idx": 1, "tool": "powershell", "arguments": {"command": "Resolve-DnsName -Name 'db' -Type A -ErrorAction SilentlyContinue | Select-Object -ExpandProperty IPAddress"}}
+{"uuid": "s5_b15_ps_05", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-DnsClientNrptPolicy | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b16_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-OdbcDsn -DsnType System | Select-Object Name, DriverName"}}
+{"uuid": "s5_b16_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-OdbcDsn -Name 'appdb' | Select-Object -ExpandProperty Attribute"}}
+{"uuid": "s5_b16_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "Test-OdbcConnection -Dsn 'appdb' -ErrorAction SilentlyContinue | Select-Object -ExpandProperty State"}}
+{"uuid": "s5_b16_ps_02", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-WebAppPoolState | Select-Object ItemXPath, Value"}}
+{"uuid": "s5_b16_ps_02", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Website | Select-Object Name, State"}}
+{"uuid": "s5_b16_ps_02", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-WebBinding -Name 'api' | Select-Object protocol, bindingInformation"}}
+{"uuid": "s5_b16_ps_03", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ChildItem Cert:/LocalMachine/My | Where-Object {$_.NotAfter -lt (Get-Date).AddDays(30)} | Select-Object Subject"}}
+{"uuid": "s5_b16_ps_03", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-ChildItem Cert:/LocalMachine/My | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b16_ps_03", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-ChildItem Cert:/LocalMachine/My | Sort-Object NotAfter | Select-Object -First 1 -ExpandProperty NotAfter"}}
+{"uuid": "s5_b16_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ItemProperty 'HKLM:/SOFTWARE/Policies/Microsoft/Windows/WindowsUpdate' -Name TargetGroup -ErrorAction SilentlyContinue | Select-Object -ExpandProperty TargetGroup"}}
+{"uuid": "s5_b16_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'wuauserv' | Select-Object Status"}}
+{"uuid": "s5_b16_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-WindowsUpdateLog -ErrorAction SilentlyContinue | Select-String 'successfully installed' | Select-Object -Last 1"}}
+{"uuid": "s5_b16_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ClusterNode | Select-Object Name, State"}}
+{"uuid": "s5_b16_ps_05", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-ClusterQuorum | Select-Object QuorumResource"}}
+{"uuid": "s5_b16_ps_05", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-ClusterResource | Where-Object {$_.State -ne 'Online'} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b17_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_BIOS | Select-Object SerialNumber, Manufacturer"}}
+{"uuid": "s5_b17_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_ComputerSystem | Select-Object Model"}}
+{"uuid": "s5_b17_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_Processor | Select-Object Name"}}
+{"uuid": "s5_b17_ps_02", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_PhysicalMemory | Select-Object Capacity"}}
+{"uuid": "s5_b17_ps_02", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_ComputerSystem | Select-Object -ExpandProperty TotalPhysicalMemory"}}
+{"uuid": "s5_b17_ps_02", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_OperatingSystem | Select-Object FreePhysicalMemory"}}
+{"uuid": "s5_b17_ps_03", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_VideoController | Select-Object Name, AdapterRAM"}}
+{"uuid": "s5_b17_ps_03", "idx": 1, "tool": "powershell", "arguments": {"command": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader"}}
+{"uuid": "s5_b17_ps_03", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-PnpDevice -Class Display | Select-Object Status"}}
+{"uuid": "s5_b17_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-PnpDevice | Where-Object {$_.Status -ne 'OK'} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b17_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-PnpDevice | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b17_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-PnpDevice -Class Net | Select-Object Status -First 2"}}
+{"uuid": "s5_b17_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_StartupCommand | Select-Object Name -First 3"}}
+{"uuid": "s5_b17_ps_05", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_StartupCommand | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b17_ps_05", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-ScheduledTask | Where-Object {$_.TaskPath -eq '\\Microsoft\\Windows\\Startup\\'} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b18_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Job | Select-Object Name, State"}}
+{"uuid": "s5_b18_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Job -Name 'deploy' | Receive-Job -Keep | Select-Object -Last 1"}}
+{"uuid": "s5_b18_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Job | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b18_ps_02", "idx": 0, "tool": "powershell", "arguments": {"command": "$env:PSModulePath -split ';'"}}
+{"uuid": "s5_b18_ps_02", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Module -ListAvailable | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b18_ps_02", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Module | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b18_ps_03", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Command -Module Microsoft.PowerShell.Management | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b18_ps_03", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Command -Verb Get -Module Microsoft.PowerShell.Management | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b18_ps_03", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Alias | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b18_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-PSReadLineOption | Select-Object -ExpandProperty MaximumHistoryCount"}}
+{"uuid": "s5_b18_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-PSReadLineOption | Select-Object -ExpandProperty EditMode"}}
+{"uuid": "s5_b18_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "(Get-PSReadLineOption).HistorySavePath"}}
+{"uuid": "s5_b18_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-History | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b18_ps_05", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-History -Count 1 | Select-Object -ExpandProperty CommandLine"}}
+{"uuid": "s5_b18_ps_05", "idx": 2, "tool": "powershell", "arguments": {"command": "Clear-History -ErrorAction SilentlyContinue; Get-History | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b19_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "quser | Measure-Object -Line | Select-Object -ExpandProperty Lines"}}
+{"uuid": "s5_b19_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "qwinsta | Select-String -Pattern 'Active|Disc'"}}
+{"uuid": "s5_b19_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Process -Name mstsc -ErrorAction SilentlyContinue | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b19_ps_02", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'TermService' | Select-Object Status, StartType"}}
+{"uuid": "s5_b19_ps_02", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'SessionEnv' | Select-Object Status"}}
+{"uuid": "s5_b19_ps_02", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-ItemProperty 'HKLM:/SYSTEM/CurrentControlSet/Control/Terminal Server' -Name fDenyTSConnections | Select-Object -ExpandProperty fDenyTSConnections"}}
+{"uuid": "s5_b19_ps_03", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ItemProperty 'HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Policies/System' -Name legalnoticecaption -ErrorAction SilentlyContinue | Select-Object -ExpandProperty legalnoticecaption"}}
+{"uuid": "s5_b19_ps_03", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-ItemProperty 'HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Policies/System' -Name legalnoticetext -ErrorAction SilentlyContinue | Select-Object -ExpandProperty legalnoticetext"}}
+{"uuid": "s5_b19_ps_03", "idx": 2, "tool": "powershell", "arguments": {"command": "gpresult /r | Select-String 'Logon' | Select-Object -First 1"}}
+{"uuid": "s5_b19_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ItemProperty 'HKLM:/SOFTWARE/Policies/Microsoft/Windows NT/Terminal Services' -Name MaxIdleTime -ErrorAction SilentlyContinue | Select-Object -ExpandProperty MaxIdleTime"}}
+{"uuid": "s5_b19_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "qwinsta | Select-String IDLE"}}
+{"uuid": "s5_b19_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-RDSessionCollection -ErrorAction SilentlyContinue | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b19_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ItemProperty 'HKLM:/SOFTWARE/Policies/Microsoft/Windows NT/Terminal Services' -Name Shadow -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Shadow"}}
+{"uuid": "s5_b19_ps_05", "idx": 1, "tool": "powershell", "arguments": {"command": "mstsc /shadow:1 /control /noConsentPrompt 2>&1 | Select-Object -First 1"}}
+{"uuid": "s5_b19_ps_05", "idx": 2, "tool": "powershell", "arguments": {"command": "qwinsta | Select-String console"}}
+{"uuid": "s5_b20_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-DnsClientCache | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b20_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-DnsClientCache | Where-Object {$_.Entry -like '*acme*'} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b20_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "Clear-DnsClientCache; Get-DnsClientCache | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b20_ps_02", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_Process | Group-Object Name | Sort-Object Count -Descending | Select-Object -First 2 Name, Count"}}
+{"uuid": "s5_b20_ps_02", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_Process | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b20_ps_02", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Process -Id $PID | Select-Object WS"}}
+{"uuid": "s5_b20_ps_03", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Service | Where-Object {$_.StartType -eq 'AutomaticDelayedStart' -and $_.Status -ne 'Running'} | Select-Object Name"}}
+{"uuid": "s5_b20_ps_03", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Service | Where-Object {$_.StartType -like 'Automatic*'} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b20_ps_03", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Service | Where-Object {$_.Status -eq 'Running'} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b20_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_NetworkAdapter | Where-Object {$_.PhysicalAdapter -and $_.NetEnabled} | Select-Object Name"}}
+{"uuid": "s5_b20_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_NetworkAdapter | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b20_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-NetAdapter -Physical | Select-Object Status -Unique"}}
+{"uuid": "s5_b20_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_SoundDevice | Select-Object Name, Status"}}
+{"uuid": "s5_b20_ps_05", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_SoundDevice | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b20_ps_05", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'Audiosrv' | Select-Object Status"}}
+{"uuid": "s5_b21_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_Battery | Select-Object EstimatedRunTime"}}
+{"uuid": "s5_b21_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_Battery | Select-Object BatteryStatus"}}
+{"uuid": "s5_b21_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_PortableBattery | Select-Object -ExpandProperty DesignCapacity"}}
+{"uuid": "s5_b21_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_PointingDevice | Select-Object Name, Status"}}
+{"uuid": "s5_b21_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_PointingDevice | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b21_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-PnpDevice -Class Mouse | Select-Object Status"}}
+{"uuid": "s5_b21_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_OperatingSystem | Select-Object Caption, Version"}}
+{"uuid": "s5_b21_ps_05", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-ItemProperty 'HKLM:/SOFTWARE/Microsoft/Windows NT/CurrentVersion' | Select-Object -ExpandProperty DisplayVersion"}}
+{"uuid": "s5_b21_ps_05", "idx": 2, "tool": "powershell", "arguments": {"command": "[Environment]::OSVersion.VersionString"}}
+{"uuid": "s5_b21_ps_06", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-TimeZone -ListAvailable | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b21_ps_06", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-TimeZone | Select-Object Id"}}
+{"uuid": "s5_b21_ps_06", "idx": 2, "tool": "powershell", "arguments": {"command": "w32tm /query /status | Select-String -Pattern 'Stratum' | Select-Object -First 1"}}
+{"uuid": "s5_b21_ps_07", "idx": 0, "tool": "powershell", "arguments": {"command": "certutil -hashfile C:/setup.exe SHA256 | Select-Object -Index 1"}}
+{"uuid": "s5_b21_ps_07", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-FileHash C:/setup.exe -Algorithm SHA256 | Select-Object -ExpandProperty Hash"}}
+{"uuid": "s5_b21_ps_07", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Item C:/setup.exe | Select-Object Length"}}
+{"uuid": "s5_b21_ps_08", "idx": 0, "tool": "powershell", "arguments": {"command": "fc C:/app/a.conf C:/app/b.conf | Select-Object -First 4"}}
+{"uuid": "s5_b21_ps_08", "idx": 1, "tool": "powershell", "arguments": {"command": "Compare-Object (Get-Content C:/app/a.conf) (Get-Content C:/app/b.conf) | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b21_ps_08", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-FileHash C:/app/a.conf, C:/app/b.conf | Select-Object Hash"}}
+{"uuid": "s5_b21_ps_09", "idx": 0, "tool": "powershell", "arguments": {"command": "robocopy D:/data E:/mirror /L /NJH /NJS | Select-String -Pattern 'Files :'"}}
+{"uuid": "s5_b21_ps_09", "idx": 1, "tool": "powershell", "arguments": {"command": "robocopy D:/data E:/mirror /L /NJH /NJS | Select-String -Pattern 'Bytes :'"}}
+{"uuid": "s5_b21_ps_09", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-ChildItem D:/data -Recurse -File -ErrorAction SilentlyContinue | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b21_ps_10", "idx": 0, "tool": "powershell", "arguments": {"command": "xcopy D:/data E:/mirror /L /Y | Measure-Object -Line | Select-Object -ExpandProperty Lines"}}
+{"uuid": "s5_b21_ps_10", "idx": 1, "tool": "powershell", "arguments": {"command": "xcopy D:/data E:/mirror /L /Y /D | Select-String -Pattern 'File(s)' | Select-Object -First 1"}}
+{"uuid": "s5_b21_ps_10", "idx": 2, "tool": "powershell", "arguments": {"command": "attrib D:/data/*.* | Measure-Object -Line | Select-Object -ExpandProperty Lines"}}
+{"uuid": "s5_b21_ps_11", "idx": 0, "tool": "powershell", "arguments": {"command": "winget upgrade | Measure-Object -Line | Select-Object -ExpandProperty Lines"}}
+{"uuid": "s5_b21_ps_11", "idx": 1, "tool": "powershell", "arguments": {"command": "winget upgrade --include-unknown | Select-String -Pattern 'Git' | Select-Object -First 1"}}
+{"uuid": "s5_b21_ps_11", "idx": 2, "tool": "powershell", "arguments": {"command": "winget --version"}}
+{"uuid": "s5_b21_ps_12", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-AppxProvisionedPackage -Online | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b21_ps_12", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-AppxPackage -AllUsers | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b21_ps_12", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-AppxPackage -Name '*Store*' | Select-Object Version"}}
+{"uuid": "s5_b21_ps_13", "idx": 0, "tool": "powershell", "arguments": {"command": "vssadmin list shadows | Select-String -Pattern 'Creation Time' | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b21_ps_13", "idx": 1, "tool": "powershell", "arguments": {"command": "vssadmin list shadowstorage | Select-String -Pattern 'Allocated' | Select-Object -First 1"}}
+{"uuid": "s5_b21_ps_13", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_ShadowCopy | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b21_ps_14", "idx": 0, "tool": "powershell", "arguments": {"command": "wbadmin get versions | Select-String -Pattern 'Backup time' | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b21_ps_14", "idx": 1, "tool": "powershell", "arguments": {"command": "wbadmin get versions | Select-String -Pattern 'Backup time' | Select-Object -First 1"}}
+{"uuid": "s5_b21_ps_14", "idx": 2, "tool": "powershell", "arguments": {"command": "wbadmin get status | Select-String -Pattern 'Running' | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b21_ps_15", "idx": 0, "tool": "powershell", "arguments": {"command": "bcdedit /enum | Select-String -Pattern 'identifier' | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b21_ps_15", "idx": 1, "tool": "powershell", "arguments": {"command": "bcdedit /enum {current} | Select-String -Pattern 'description'"}}
+{"uuid": "s5_b21_ps_15", "idx": 2, "tool": "powershell", "arguments": {"command": "bcdedit /enum {bootmgr} | Select-String -Pattern 'timeout'"}}
+{"uuid": "s5_b21_ps_16", "idx": 0, "tool": "powershell", "arguments": {"command": "reagentc /info | Select-String -Pattern 'Recovery image location'"}}
+{"uuid": "s5_b21_ps_16", "idx": 1, "tool": "powershell", "arguments": {"command": "reagentc /info | Select-String -Pattern 'Windows RE status'"}}
+{"uuid": "s5_b21_ps_16", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Partition | Where-Object {$_.Type -eq 'Recovery'} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b21_ps_17", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-SmbConnection | Select-Object -First 1 -ExpandProperty Dialect"}}
+{"uuid": "s5_b21_ps_17", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-SmbConnection | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "s5_b21_ps_17", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-SmbClientConfiguration | Select-Object -ExpandProperty EnableMultichannel"}}
+{"uuid": "t_sml_0308", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Process | Sort-Object WS -Descending | Select-Object -First 1"}}
+{"uuid": "t_sml_0308", "idx": 1, "tool": "powershell", "arguments": {"command": "Stop-Process -Name chrome -Force"}}
+{"uuid": "t_sml_0308", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Process chrome -ErrorAction SilentlyContinue"}}
+{"uuid": "t_sml_0311", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-LocalGroupMember -Group 'Administrators'"}}
+{"uuid": "t_sml_0311", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-LocalUser | Where-Object {$_.Enabled -eq $true} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0311", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-LocalGroup | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0312", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-MpThreatDetection | Sort-Object InitialDetectionTime -Descending | Select-Object -First 1"}}
+{"uuid": "t_sml_0312", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-MpComputerStatus | Select-Object -ExpandProperty QuickScanAge"}}
+{"uuid": "t_sml_0312", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-MpPreference | Select-Object -ExpandProperty ScanScheduleDay"}}
+{"uuid": "t_sml_0313", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-NetFirewallProfile | Select-Object Name, Enabled"}}
+{"uuid": "t_sml_0313", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-NetFirewallProfile -Name Public | Select-Object DefaultInboundAction"}}
+{"uuid": "t_sml_0313", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-NetFirewallRule -Enabled True | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0314", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-WinEvent -LogName Application -MaxEvents 50 | Where-Object {$_.LevelDisplayName -eq 'Error'} | Select-Object -First 3"}}
+{"uuid": "t_sml_0314", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-WinEvent -ListLog Application | Select-Object RecordCount"}}
+{"uuid": "t_sml_0314", "idx": 2, "tool": "powershell", "arguments": {"command": "wevtutil gl Application | Select-String maxSize"}}
+{"uuid": "t_sml_0315", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-AppxPackage -AllUsers | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0315", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-AppxPackage -AllUsers | Select-Object Name -First 3"}}
+{"uuid": "t_sml_0315", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-AppxPackage -Name '*Xbox*' -AllUsers | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0316", "idx": 0, "tool": "powershell", "arguments": {"command": "powercfg /batteryreport /output C:/batt.html | Out-Null; Get-Content C:/batt.html | Select-String 'Design Capacity' | Select-Object -First 1"}}
+{"uuid": "t_sml_0316", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-WmiObject -Class BatteryStatus -Namespace root/wmi | Select-Object -ExpandProperty RemainingCapacity"}}
+{"uuid": "t_sml_0316", "idx": 2, "tool": "powershell", "arguments": {"command": "Remove-Item C:/batt.html -Force"}}
+{"uuid": "t_sml_0317", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-NetRoute -DestinationPrefix '0.0.0.0/0' | Select-Object NextHop, InterfaceAlias"}}
+{"uuid": "t_sml_0317", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias 'Ethernet0' | Select-Object -ExpandProperty IPAddress"}}
+{"uuid": "t_sml_0317", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-NetAdapter -Name 'Ethernet0' | Select-Object Status"}}
+{"uuid": "t_sml_0318", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-SmbSession | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0318", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-SmbSession | Select-Object ClientComputerName -First 3"}}
+{"uuid": "t_sml_0318", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-SmbOpenFile | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0319", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_PageFileUsage | Select-Object AllocatedBaseSize"}}
+{"uuid": "t_sml_0319", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_ComputerSystem | Select-Object -ExpandProperty TotalPhysicalMemory"}}
+{"uuid": "t_sml_0319", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_PageFileSetting | Select-Object -ExpandProperty AutomaticManagedPagefile"}}
+{"uuid": "t_sml_0320", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-OdbcDsn -DsnType System | Select-Object Name, DriverName"}}
+{"uuid": "t_sml_0320", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-OdbcDsn -Name 'appdb' | Select-Object -ExpandProperty Attribute"}}
+{"uuid": "t_sml_0320", "idx": 2, "tool": "powershell", "arguments": {"command": "Test-OdbcConnection -Dsn 'appdb' -ErrorAction SilentlyContinue | Select-Object -ExpandProperty State"}}
+{"uuid": "t_sml_0321", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ClusterNode | Select-Object Name, State"}}
+{"uuid": "t_sml_0321", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-ClusterQuorum | Select-Object QuorumResource"}}
+{"uuid": "t_sml_0321", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-ClusterResource | Where-Object {$_.State -ne 'Online'} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0322", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-PnpDevice | Where-Object {$_.Status -ne 'OK'} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0322", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-PnpDevice | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0322", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-PnpDevice -Class Net | Select-Object Status -First 2"}}
+{"uuid": "t_sml_0323", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Command -Module Microsoft.PowerShell.Management | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0323", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Command -Verb Get -Module Microsoft.PowerShell.Management | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0323", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Alias | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0324", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'TermService' | Select-Object Status, StartType"}}
+{"uuid": "t_sml_0324", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'SessionEnv' | Select-Object Status"}}
+{"uuid": "t_sml_0324", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-ItemProperty 'HKLM:/SYSTEM/CurrentControlSet/Control/Terminal Server' -Name fDenyTSConnections | Select-Object -ExpandProperty fDenyTSConnections"}}
+{"uuid": "t_sml_0325", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-DnsClientCache | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0325", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-DnsClientCache | Where-Object {$_.Entry -like '*acme*'} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0325", "idx": 2, "tool": "powershell", "arguments": {"command": "Clear-DnsClientCache; Get-DnsClientCache | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0326", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_SoundDevice | Select-Object Name, Status"}}
+{"uuid": "t_sml_0326", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_SoundDevice | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0326", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Service -Name 'Audiosrv' | Select-Object Status"}}
+{"uuid": "t_sml_0327", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_PointingDevice | Select-Object Name, Status"}}
+{"uuid": "t_sml_0327", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_PointingDevice | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0327", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-PnpDevice -Class Mouse | Select-Object Status"}}
+{"uuid": "t_sml_0328", "idx": 0, "tool": "powershell", "arguments": {"command": "fc C:/app/a.conf C:/app/b.conf | Select-Object -First 4"}}
+{"uuid": "t_sml_0328", "idx": 1, "tool": "powershell", "arguments": {"command": "Compare-Object (Get-Content C:/app/a.conf) (Get-Content C:/app/b.conf) | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0328", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-FileHash C:/app/a.conf, C:/app/b.conf | Select-Object Hash"}}
+{"uuid": "t_sml_0329", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-AppxProvisionedPackage -Online | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0329", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-AppxPackage -AllUsers | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0329", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-AppxPackage -Name '*Store*' | Select-Object Version"}}
+{"uuid": "t_sml_0330", "idx": 0, "tool": "powershell", "arguments": {"command": "reagentc /info | Select-String -Pattern 'Recovery image location'"}}
+{"uuid": "t_sml_0330", "idx": 1, "tool": "powershell", "arguments": {"command": "reagentc /info | Select-String -Pattern 'Windows RE status'"}}
+{"uuid": "t_sml_0330", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-Partition | Where-Object {$_.Type -eq 'Recovery'} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0356", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ChildItem -Path 'C:/Logs'"}}
+{"uuid": "t_sml_0361", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Service"}}
+{"uuid": "t_sml_0362", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-NetAdapter"}}
+{"uuid": "t_sml_0363", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-NetFirewallRule | Where-Object {$_.LocalPort -eq 443}"}}
+{"uuid": "t_sml_0364", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Printer | Where-Object {$_.Default -eq $true}"}}
+{"uuid": "t_sml_0365", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Content -Path 'C:/app/version.txt'"}}
+{"uuid": "t_sml_0590", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-PSDrive C | Select-Object Used, Free"}}
+{"uuid": "t_sml_0590", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-ChildItem C:/ -Directory | ForEach-Object { $s=(Get-ChildItem $_.FullName -Recurse -ErrorAction SilentlyContinue | Measure-Object Length -Sum).Sum; [pscustomobject]@{N=$_.Name;GB=[math]::Round($s/1GB,1)} } | Sort-Object GB -Descending | Select-Object -First 3"}}
+{"uuid": "t_sml_0590", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-ChildItem C:/Windows/Temp | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0591", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ChildItem C:/Windows/Temp -Recurse -ErrorAction SilentlyContinue | Where-Object {$_.LastWriteTime -lt (Get-Date).AddDays(-7)} | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0591", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-ChildItem C:/Windows/Temp -Recurse -ErrorAction SilentlyContinue | Measure-Object Length -Sum | Select-Object -ExpandProperty Sum"}}
+{"uuid": "t_sml_0591", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-PSDrive C | Select-Object Used, Free"}}
+{"uuid": "t_sml_0592", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Counter '\\Processor(_Total)\\% Processor Time' -SampleInterval 1 -MaxSamples 5 | Select-Object -ExpandProperty CounterSamples | Measure-Object CookedValue -Average | Select-Object -ExpandProperty Average"}}
+{"uuid": "t_sml_0592", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Counter '\\Memory\\Available MBytes' | Select-Object -ExpandProperty CounterSamples | Select-Object -ExpandProperty CookedValue"}}
+{"uuid": "t_sml_0592", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-ComputerInfo | Select-Object -ExpandProperty CsNumberOfLogicalProcessors"}}
+{"uuid": "t_sml_0593", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-NetNeighbor -AddressFamily IPv4 | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0593", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-NetNeighbor -IPAddress 10.0.0.1 | Select-Object State"}}
+{"uuid": "t_sml_0593", "idx": 2, "tool": "powershell", "arguments": {"command": "arp -a | Select-String '10.0.0.1' | Select-Object -First 1"}}
+{"uuid": "t_sml_0594", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-WebAppPoolState | Select-Object ItemXPath, Value"}}
+{"uuid": "t_sml_0594", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Website | Select-Object Name, State"}}
+{"uuid": "t_sml_0594", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-WebBinding -Name 'api' | Select-Object protocol, bindingInformation"}}
+{"uuid": "t_sml_0595", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-PSReadLineOption | Select-Object -ExpandProperty MaximumHistoryCount"}}
+{"uuid": "t_sml_0595", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-PSReadLineOption | Select-Object -ExpandProperty EditMode"}}
+{"uuid": "t_sml_0595", "idx": 2, "tool": "powershell", "arguments": {"command": "(Get-PSReadLineOption).HistorySavePath"}}
+{"uuid": "t_sml_0596", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_Battery | Select-Object EstimatedRunTime"}}
+{"uuid": "t_sml_0596", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_Battery | Select-Object BatteryStatus"}}
+{"uuid": "t_sml_0596", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_PortableBattery | Select-Object -ExpandProperty DesignCapacity"}}
+{"uuid": "t_sml_0597", "idx": 0, "tool": "powershell", "arguments": {"command": "vssadmin list shadows | Select-String -Pattern 'Creation Time' | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0597", "idx": 1, "tool": "powershell", "arguments": {"command": "vssadmin list shadowstorage | Select-String -Pattern 'Allocated' | Select-Object -First 1"}}
+{"uuid": "t_sml_0597", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-CimInstance Win32_ShadowCopy | Measure-Object | Select-Object -ExpandProperty Count"}}
+{"uuid": "t_sml_0608", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ScheduledTask | Where-Object {$_.TaskName -like '*backup*'}"}}
+{"uuid": "t_sml_0609", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Location"}}
+{"uuid": "t_beh_0012", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-WinEvent -LogName Application -MaxEvents 50 | Where-Object {$_.LevelDisplayName -eq 'Error'} | Select-Object -First 3"}}
+{"uuid": "t_beh_0012", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-WinEvent -ListLog Application | Select-Object RecordCount"}}
+{"uuid": "t_beh_0012", "idx": 2, "tool": "powershell", "arguments": {"command": "wevtutil gl Application | Select-String maxSize"}}
+{"uuid": "t_rep_0009", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-ChildItem -Path 'C:/Logs'"}}

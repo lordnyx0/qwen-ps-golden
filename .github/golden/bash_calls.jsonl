@@ -1,0 +1,24 @@
+{"uuid": "t_sem_011", "idx": 0, "tool": "list_dir", "arguments": {"path": "/var/backups"}}
+{"uuid": "t_sem_012", "idx": 0, "tool": "run_shell_command", "arguments": {"command": "du --max-depth=1 /var/log"}}
+{"uuid": "t_sem_013", "idx": 0, "tool": "run_shell_command", "arguments": {"command": "df -h /var/data"}}
+{"uuid": "t_sem_014", "idx": 0, "tool": "compute_checksum", "arguments": {"algorithm": "sha256", "path": "/var/data/dataset.parquet"}}
+{"uuid": "t_sem_015", "idx": 0, "tool": "read_file", "arguments": {"path": "/var/log/syslog"}}
+{"uuid": "t_sem_016", "idx": 0, "tool": "list_dir", "arguments": {"path": "/logs/app1"}}
+{"uuid": "t_sem_017", "idx": 0, "tool": "run_shell_command", "arguments": {"command": "wc -l /var/log/nginx/access.log"}}
+{"uuid": "t_sem_018", "idx": 0, "tool": "run_shell_command", "arguments": {"command": "find /var/backups -mtime -1"}}
+{"uuid": "t_sem_019", "idx": 0, "tool": "run_shell_command", "arguments": {"command": "ps aux --sort=-%cpu | head -n 5"}}
+{"uuid": "t_sem_020", "idx": 0, "tool": "run_shell_command", "arguments": {"command": "df -h /"}}
+{"uuid": "t_cal_01a", "idx": 0, "tool": "list_dir", "arguments": {"path": "/srv/backups"}}
+{"uuid": "t_cal_02a", "idx": 0, "tool": "run_shell_command", "arguments": {"command": "du --max-depth=1 /srv/www"}}
+{"uuid": "t_cal_03a", "idx": 0, "tool": "read_file", "arguments": {"path": "/etc/hostname"}}
+{"uuid": "t_cal_04a", "idx": 0, "tool": "compute_checksum", "arguments": {"algorithm": "md5", "path": "/opt/app/release.tar.gz"}}
+{"uuid": "t_cal_05a", "idx": 0, "tool": "dns_lookup", "arguments": {"domain": "example-mail.org"}}
+{"uuid": "t_cal_06a", "idx": 0, "tool": "run_shell_command", "arguments": {"command": "ps aux --sort=-%mem | head -n 3"}}
+{"uuid": "t_cal_30a", "idx": 0, "tool": "list_dir", "arguments": {"path": "/opt/releases"}}
+{"uuid": "t_sml_0350", "idx": 0, "tool": "run_shell_command", "arguments": {"command": "du --max-depth=1 /srv/www"}}
+{"uuid": "t_sml_0351", "idx": 0, "tool": "run_shell_command", "arguments": {"command": "ps aux --sort=-%mem | head -n 3"}}
+{"uuid": "t_sml_0357", "idx": 0, "tool": "list_dir", "arguments": {"path": "/opt/releases"}}
+{"uuid": "t_sml_0453", "idx": 0, "tool": "run_shell_command", "arguments": {"command": "df -h /var/data"}}
+{"uuid": "t_sml_0454", "idx": 0, "tool": "run_shell_command", "arguments": {"command": "wc -l /var/log/nginx/access.log"}}
+{"uuid": "t_sml_0604", "idx": 0, "tool": "read_file", "arguments": {"path": "/etc/hostname"}}
+{"uuid": "t_sml_0635", "idx": 0, "tool": "run_shell_command", "arguments": {"command": "find /var/backups -mtime -1"}}

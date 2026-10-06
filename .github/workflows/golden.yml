@@ -1,0 +1,44 @@
+# golden.yml — coleta goldens de execucao real em runners descartaveis.
+# Disparo manual (Actions > ps-bash-golden > Run workflow). Nada executa no host do dev.
+# Escopo: 155 windows_powershell (396 calls) + 24 terminal_linux (24 calls).
+# Artefatos: ps_results.jsonl + bash_results.jsonl (congelar como fixture p/ RL).
+name: ps-bash-golden
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  ps-golden:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/golden
+          sparse-checkout-cone-mode: false
+      - name: Collect PowerShell goldens
+        shell: powershell
+        run: |
+          powershell -NoProfile -NonInteractive -ExecutionPolicy Bypass -File .github/golden/collect-ps.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ps_results
+          path: .github/golden/out/ps_results.jsonl
+          retention-days: 30
+
+  bash-golden:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/golden
+          sparse-checkout-cone-mode: false
+      - name: Collect bash-family goldens
+        shell: bash
+        run: python3 .github/golden/collect-bash.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bash_results
+          path: .github/golden/out/bash_results.jsonl
+          retention-days: 30

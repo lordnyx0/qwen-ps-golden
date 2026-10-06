@@ -43,7 +43,7 @@ def collect(call):
     tool = call.get("tool")
     args = call.get("arguments", {}) or {}
     refused = ""
-    if tool == "run_shell_command":
+    if tool in ("run_shell_command", "bash"):
         cmd = str(args.get("command", ""))
         if not cmd.strip():
             return False, -1, "", "", "empty command"

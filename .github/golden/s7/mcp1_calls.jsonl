@@ -1,0 +1,200 @@
+{"uuid": "mcp_w_001", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/alpha_001.txt", "content": "alpha status ok 1"}}
+{"uuid": "mcp_w_002", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/bravo_002.txt", "content": "bravo status ok 2"}}
+{"uuid": "mcp_w_003", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/cedar_003.txt", "content": "cedar status ok 3"}}
+{"uuid": "mcp_w_004", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/delta_004.txt", "content": "delta status ok 4"}}
+{"uuid": "mcp_w_005", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/ember_005.txt", "content": "ember status ok 5"}}
+{"uuid": "mcp_w_006", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/flint_006.txt", "content": "flint status ok 6"}}
+{"uuid": "mcp_w_007", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/grove_007.txt", "content": "grove status ok 7"}}
+{"uuid": "mcp_w_008", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/harbor_008.txt", "content": "harbor status ok 8"}}
+{"uuid": "mcp_w_009", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/inlet_009.txt", "content": "inlet status ok 9"}}
+{"uuid": "mcp_w_010", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/juniper_010.txt", "content": "juniper status ok 10"}}
+{"uuid": "mcp_w_011", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/kelp_011.txt", "content": "kelp status ok 11"}}
+{"uuid": "mcp_w_012", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/lagoon_012.txt", "content": "lagoon status ok 12"}}
+{"uuid": "mcp_w_013", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/meadow_013.txt", "content": "meadow status ok 13"}}
+{"uuid": "mcp_w_014", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/narrows_014.txt", "content": "narrows status ok 14"}}
+{"uuid": "mcp_w_015", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/orchard_015.txt", "content": "orchard status ok 15"}}
+{"uuid": "mcp_w_016", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/prairie_016.txt", "content": "prairie status ok 16"}}
+{"uuid": "mcp_w_017", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/quarry_017.txt", "content": "quarry status ok 17"}}
+{"uuid": "mcp_w_018", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/ridge_018.txt", "content": "ridge status ok 18"}}
+{"uuid": "mcp_w_019", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/summit_019.txt", "content": "summit status ok 19"}}
+{"uuid": "mcp_w_020", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/tundra_020.txt", "content": "tundra status ok 20"}}
+{"uuid": "mcp_w_021", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/umber_021.txt", "content": "umber status ok 21"}}
+{"uuid": "mcp_w_022", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/vale_022.txt", "content": "vale status ok 22"}}
+{"uuid": "mcp_w_023", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/willow_023.txt", "content": "willow status ok 23"}}
+{"uuid": "mcp_w_024", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/yonder_024.txt", "content": "yonder status ok 24"}}
+{"uuid": "mcp_w_025", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/zephyr_025.txt", "content": "zephyr status ok 25"}}
+{"uuid": "mcp_w_026", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/acorn_026.txt", "content": "acorn status ok 26"}}
+{"uuid": "mcp_w_027", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/birch_027.txt", "content": "birch status ok 27"}}
+{"uuid": "mcp_w_028", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/clover_028.txt", "content": "clover status ok 28"}}
+{"uuid": "mcp_w_029", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/dune_029.txt", "content": "dune status ok 29"}}
+{"uuid": "mcp_w_030", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/elm_030.txt", "content": "elm status ok 30"}}
+{"uuid": "mcp_w_031", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/fern_031.txt", "content": "fern status ok 31"}}
+{"uuid": "mcp_w_032", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/gale_032.txt", "content": "gale status ok 32"}}
+{"uuid": "mcp_w_033", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/heath_033.txt", "content": "heath status ok 33"}}
+{"uuid": "mcp_w_034", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/iris_034.txt", "content": "iris status ok 34"}}
+{"uuid": "mcp_w_035", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/jade_035.txt", "content": "jade status ok 35"}}
+{"uuid": "mcp_w_036", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/kestrel_036.txt", "content": "kestrel status ok 36"}}
+{"uuid": "mcp_w_037", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/lark_037.txt", "content": "lark status ok 37"}}
+{"uuid": "mcp_w_038", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/maple_038.txt", "content": "maple status ok 38"}}
+{"uuid": "mcp_w_039", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/north_039.txt", "content": "north status ok 39"}}
+{"uuid": "mcp_w_040", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/opal_040.txt", "content": "opal status ok 40"}}
+{"uuid": "mcp_w_041", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/pine_041.txt", "content": "pine status ok 41"}}
+{"uuid": "mcp_w_042", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/quill_042.txt", "content": "quill status ok 42"}}
+{"uuid": "mcp_w_043", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/rowan_043.txt", "content": "rowan status ok 43"}}
+{"uuid": "mcp_w_044", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/spruce_044.txt", "content": "spruce status ok 44"}}
+{"uuid": "mcp_w_045", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/thyme_045.txt", "content": "thyme status ok 45"}}
+{"uuid": "mcp_w_046", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/ursa_046.txt", "content": "ursa status ok 46"}}
+{"uuid": "mcp_w_047", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/vetch_047.txt", "content": "vetch status ok 47"}}
+{"uuid": "mcp_w_048", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/wren_048.txt", "content": "wren status ok 48"}}
+{"uuid": "mcp_w_049", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/yarrow_049.txt", "content": "yarrow status ok 49"}}
+{"uuid": "mcp_w_050", "idx": 0, "tool": "write_file", "arguments": {"path": "/tmp/mcpw/zinc_050.txt", "content": "zinc status ok 50"}}
+{"uuid": "mcp_c_001", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/config_acorn_001"}}
+{"uuid": "mcp_c_002", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/reports_birch_002"}}
+{"uuid": "mcp_c_003", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/data_clover_003"}}
+{"uuid": "mcp_c_004", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/tmp_dune_004"}}
+{"uuid": "mcp_c_005", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/docs_elm_005"}}
+{"uuid": "mcp_c_006", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/cache_fern_006"}}
+{"uuid": "mcp_c_007", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/out_gale_007"}}
+{"uuid": "mcp_c_008", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/notes_heath_008"}}
+{"uuid": "mcp_c_009", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/logs_iris_009"}}
+{"uuid": "mcp_c_010", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/drafts_jade_010"}}
+{"uuid": "mcp_c_011", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/config_kestrel_011"}}
+{"uuid": "mcp_c_012", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/reports_lark_012"}}
+{"uuid": "mcp_c_013", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/data_maple_013"}}
+{"uuid": "mcp_c_014", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/tmp_north_014"}}
+{"uuid": "mcp_c_015", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/docs_opal_015"}}
+{"uuid": "mcp_c_016", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/cache_pine_016"}}
+{"uuid": "mcp_c_017", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/out_quill_017"}}
+{"uuid": "mcp_c_018", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/notes_rowan_018"}}
+{"uuid": "mcp_c_019", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/logs_spruce_019"}}
+{"uuid": "mcp_c_020", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/drafts_thyme_020"}}
+{"uuid": "mcp_c_021", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/config_ursa_021"}}
+{"uuid": "mcp_c_022", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/reports_vetch_022"}}
+{"uuid": "mcp_c_023", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/data_wren_023"}}
+{"uuid": "mcp_c_024", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/tmp_yarrow_024"}}
+{"uuid": "mcp_c_025", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/docs_zinc_025"}}
+{"uuid": "mcp_c_026", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/cache_alpha_026"}}
+{"uuid": "mcp_c_027", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/out_bravo_027"}}
+{"uuid": "mcp_c_028", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/notes_cedar_028"}}
+{"uuid": "mcp_c_029", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/logs_delta_029"}}
+{"uuid": "mcp_c_030", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/drafts_ember_030"}}
+{"uuid": "mcp_c_031", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/config_flint_031"}}
+{"uuid": "mcp_c_032", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/reports_grove_032"}}
+{"uuid": "mcp_c_033", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/data_harbor_033"}}
+{"uuid": "mcp_c_034", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/tmp_inlet_034"}}
+{"uuid": "mcp_c_035", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/docs_juniper_035"}}
+{"uuid": "mcp_c_036", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/cache_kelp_036"}}
+{"uuid": "mcp_c_037", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/out_lagoon_037"}}
+{"uuid": "mcp_c_038", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/notes_meadow_038"}}
+{"uuid": "mcp_c_039", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/logs_narrows_039"}}
+{"uuid": "mcp_c_040", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/drafts_orchard_040"}}
+{"uuid": "mcp_c_041", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/config_prairie_041"}}
+{"uuid": "mcp_c_042", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/reports_quarry_042"}}
+{"uuid": "mcp_c_043", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/data_ridge_043"}}
+{"uuid": "mcp_c_044", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/tmp_summit_044"}}
+{"uuid": "mcp_c_045", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/docs_tundra_045"}}
+{"uuid": "mcp_c_046", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/cache_umber_046"}}
+{"uuid": "mcp_c_047", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/out_vale_047"}}
+{"uuid": "mcp_c_048", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/notes_willow_048"}}
+{"uuid": "mcp_c_049", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/logs_yonder_049"}}
+{"uuid": "mcp_c_050", "idx": 0, "tool": "create_directory", "arguments": {"path": "/tmp/mcpw/drafts_zephyr_050"}}
+{"uuid": "mcp_v_001", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_001.txt", "destination": "/tmp/mcpw/dst_alpha_001.txt"}}
+{"uuid": "mcp_v_002", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_002.txt", "destination": "/tmp/mcpw/dst_harbor_002.txt"}}
+{"uuid": "mcp_v_003", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_003.txt", "destination": "/tmp/mcpw/dst_orchard_003.txt"}}
+{"uuid": "mcp_v_004", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_004.txt", "destination": "/tmp/mcpw/dst_vale_004.txt"}}
+{"uuid": "mcp_v_005", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_005.txt", "destination": "/tmp/mcpw/dst_dune_005.txt"}}
+{"uuid": "mcp_v_006", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_006.txt", "destination": "/tmp/mcpw/dst_kestrel_006.txt"}}
+{"uuid": "mcp_v_007", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_007.txt", "destination": "/tmp/mcpw/dst_rowan_007.txt"}}
+{"uuid": "mcp_v_008", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_008.txt", "destination": "/tmp/mcpw/dst_zinc_008.txt"}}
+{"uuid": "mcp_v_009", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_009.txt", "destination": "/tmp/mcpw/dst_grove_009.txt"}}
+{"uuid": "mcp_v_010", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_010.txt", "destination": "/tmp/mcpw/dst_narrows_010.txt"}}
+{"uuid": "mcp_v_011", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_011.txt", "destination": "/tmp/mcpw/dst_umber_011.txt"}}
+{"uuid": "mcp_v_012", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_012.txt", "destination": "/tmp/mcpw/dst_clover_012.txt"}}
+{"uuid": "mcp_v_013", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_013.txt", "destination": "/tmp/mcpw/dst_jade_013.txt"}}
+{"uuid": "mcp_v_014", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_014.txt", "destination": "/tmp/mcpw/dst_quill_014.txt"}}
+{"uuid": "mcp_v_015", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_015.txt", "destination": "/tmp/mcpw/dst_yarrow_015.txt"}}
+{"uuid": "mcp_v_016", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_016.txt", "destination": "/tmp/mcpw/dst_flint_016.txt"}}
+{"uuid": "mcp_v_017", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_017.txt", "destination": "/tmp/mcpw/dst_meadow_017.txt"}}
+{"uuid": "mcp_v_018", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_018.txt", "destination": "/tmp/mcpw/dst_tundra_018.txt"}}
+{"uuid": "mcp_v_019", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_019.txt", "destination": "/tmp/mcpw/dst_birch_019.txt"}}
+{"uuid": "mcp_v_020", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_020.txt", "destination": "/tmp/mcpw/dst_iris_020.txt"}}
+{"uuid": "mcp_v_021", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_021.txt", "destination": "/tmp/mcpw/dst_pine_021.txt"}}
+{"uuid": "mcp_v_022", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_022.txt", "destination": "/tmp/mcpw/dst_wren_022.txt"}}
+{"uuid": "mcp_v_023", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_023.txt", "destination": "/tmp/mcpw/dst_ember_023.txt"}}
+{"uuid": "mcp_v_024", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_024.txt", "destination": "/tmp/mcpw/dst_lagoon_024.txt"}}
+{"uuid": "mcp_v_025", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_025.txt", "destination": "/tmp/mcpw/dst_summit_025.txt"}}
+{"uuid": "mcp_v_026", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_026.txt", "destination": "/tmp/mcpw/dst_acorn_026.txt"}}
+{"uuid": "mcp_v_027", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_027.txt", "destination": "/tmp/mcpw/dst_heath_027.txt"}}
+{"uuid": "mcp_v_028", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_028.txt", "destination": "/tmp/mcpw/dst_opal_028.txt"}}
+{"uuid": "mcp_v_029", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_029.txt", "destination": "/tmp/mcpw/dst_vetch_029.txt"}}
+{"uuid": "mcp_v_030", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_030.txt", "destination": "/tmp/mcpw/dst_delta_030.txt"}}
+{"uuid": "mcp_v_031", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_031.txt", "destination": "/tmp/mcpw/dst_kelp_031.txt"}}
+{"uuid": "mcp_v_032", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_032.txt", "destination": "/tmp/mcpw/dst_ridge_032.txt"}}
+{"uuid": "mcp_v_033", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_033.txt", "destination": "/tmp/mcpw/dst_zephyr_033.txt"}}
+{"uuid": "mcp_v_034", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_034.txt", "destination": "/tmp/mcpw/dst_gale_034.txt"}}
+{"uuid": "mcp_v_035", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_035.txt", "destination": "/tmp/mcpw/dst_north_035.txt"}}
+{"uuid": "mcp_v_036", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_036.txt", "destination": "/tmp/mcpw/dst_ursa_036.txt"}}
+{"uuid": "mcp_v_037", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_037.txt", "destination": "/tmp/mcpw/dst_cedar_037.txt"}}
+{"uuid": "mcp_v_038", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_038.txt", "destination": "/tmp/mcpw/dst_juniper_038.txt"}}
+{"uuid": "mcp_v_039", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_039.txt", "destination": "/tmp/mcpw/dst_quarry_039.txt"}}
+{"uuid": "mcp_v_040", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_040.txt", "destination": "/tmp/mcpw/dst_yonder_040.txt"}}
+{"uuid": "mcp_v_041", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_041.txt", "destination": "/tmp/mcpw/dst_fern_041.txt"}}
+{"uuid": "mcp_v_042", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_042.txt", "destination": "/tmp/mcpw/dst_maple_042.txt"}}
+{"uuid": "mcp_v_043", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_043.txt", "destination": "/tmp/mcpw/dst_thyme_043.txt"}}
+{"uuid": "mcp_v_044", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_044.txt", "destination": "/tmp/mcpw/dst_bravo_044.txt"}}
+{"uuid": "mcp_v_045", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_045.txt", "destination": "/tmp/mcpw/dst_inlet_045.txt"}}
+{"uuid": "mcp_v_046", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_046.txt", "destination": "/tmp/mcpw/dst_prairie_046.txt"}}
+{"uuid": "mcp_v_047", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_047.txt", "destination": "/tmp/mcpw/dst_willow_047.txt"}}
+{"uuid": "mcp_v_048", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_048.txt", "destination": "/tmp/mcpw/dst_elm_048.txt"}}
+{"uuid": "mcp_v_049", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_049.txt", "destination": "/tmp/mcpw/dst_lark_049.txt"}}
+{"uuid": "mcp_v_050", "idx": 0, "tool": "move_file", "arguments": {"source": "/tmp/mcpfix/move/src_050.txt", "destination": "/tmp/mcpw/dst_spruce_050.txt"}}
+{"uuid": "mcp_e_001", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_001.txt", "old_string": "version 1", "new_string": "version 1 revised"}}
+{"uuid": "mcp_e_002", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_002.txt", "old_string": "version 2", "new_string": "version 2 revised"}}
+{"uuid": "mcp_e_003", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_003.txt", "old_string": "version 3", "new_string": "version 3 revised"}}
+{"uuid": "mcp_e_004", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_004.txt", "old_string": "version 4", "new_string": "version 4 revised"}}
+{"uuid": "mcp_e_005", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_005.txt", "old_string": "version 5", "new_string": "version 5 revised"}}
+{"uuid": "mcp_e_006", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_006.txt", "old_string": "version 6", "new_string": "version 6 revised"}}
+{"uuid": "mcp_e_007", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_007.txt", "old_string": "version 7", "new_string": "version 7 revised"}}
+{"uuid": "mcp_e_008", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_008.txt", "old_string": "version 8", "new_string": "version 8 revised"}}
+{"uuid": "mcp_e_009", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_009.txt", "old_string": "version 9", "new_string": "version 9 revised"}}
+{"uuid": "mcp_e_010", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_010.txt", "old_string": "version 10", "new_string": "version 10 revised"}}
+{"uuid": "mcp_e_011", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_011.txt", "old_string": "version 11", "new_string": "version 11 revised"}}
+{"uuid": "mcp_e_012", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_012.txt", "old_string": "version 12", "new_string": "version 12 revised"}}
+{"uuid": "mcp_e_013", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_013.txt", "old_string": "version 13", "new_string": "version 13 revised"}}
+{"uuid": "mcp_e_014", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_014.txt", "old_string": "version 14", "new_string": "version 14 revised"}}
+{"uuid": "mcp_e_015", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_015.txt", "old_string": "version 15", "new_string": "version 15 revised"}}
+{"uuid": "mcp_e_016", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_016.txt", "old_string": "version 16", "new_string": "version 16 revised"}}
+{"uuid": "mcp_e_017", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_017.txt", "old_string": "version 17", "new_string": "version 17 revised"}}
+{"uuid": "mcp_e_018", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_018.txt", "old_string": "version 18", "new_string": "version 18 revised"}}
+{"uuid": "mcp_e_019", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_019.txt", "old_string": "version 19", "new_string": "version 19 revised"}}
+{"uuid": "mcp_e_020", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_020.txt", "old_string": "version 20", "new_string": "version 20 revised"}}
+{"uuid": "mcp_e_021", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_021.txt", "old_string": "version 21", "new_string": "version 21 revised"}}
+{"uuid": "mcp_e_022", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_022.txt", "old_string": "version 22", "new_string": "version 22 revised"}}
+{"uuid": "mcp_e_023", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_023.txt", "old_string": "version 23", "new_string": "version 23 revised"}}
+{"uuid": "mcp_e_024", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_024.txt", "old_string": "version 24", "new_string": "version 24 revised"}}
+{"uuid": "mcp_e_025", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_025.txt", "old_string": "version 25", "new_string": "version 25 revised"}}
+{"uuid": "mcp_e_026", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_026.txt", "old_string": "version 26", "new_string": "version 26 revised"}}
+{"uuid": "mcp_e_027", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_027.txt", "old_string": "version 27", "new_string": "version 27 revised"}}
+{"uuid": "mcp_e_028", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_028.txt", "old_string": "version 28", "new_string": "version 28 revised"}}
+{"uuid": "mcp_e_029", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_029.txt", "old_string": "version 29", "new_string": "version 29 revised"}}
+{"uuid": "mcp_e_030", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_030.txt", "old_string": "version 30", "new_string": "version 30 revised"}}
+{"uuid": "mcp_e_031", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_031.txt", "old_string": "version 31", "new_string": "version 31 revised"}}
+{"uuid": "mcp_e_032", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_032.txt", "old_string": "version 32", "new_string": "version 32 revised"}}
+{"uuid": "mcp_e_033", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_033.txt", "old_string": "version 33", "new_string": "version 33 revised"}}
+{"uuid": "mcp_e_034", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_034.txt", "old_string": "version 34", "new_string": "version 34 revised"}}
+{"uuid": "mcp_e_035", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_035.txt", "old_string": "version 35", "new_string": "version 35 revised"}}
+{"uuid": "mcp_e_036", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_036.txt", "old_string": "version 36", "new_string": "version 36 revised"}}
+{"uuid": "mcp_e_037", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_037.txt", "old_string": "version 37", "new_string": "version 37 revised"}}
+{"uuid": "mcp_e_038", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_038.txt", "old_string": "version 38", "new_string": "version 38 revised"}}
+{"uuid": "mcp_e_039", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_039.txt", "old_string": "version 39", "new_string": "version 39 revised"}}
+{"uuid": "mcp_e_040", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_040.txt", "old_string": "version 40", "new_string": "version 40 revised"}}
+{"uuid": "mcp_e_041", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_041.txt", "old_string": "version 41", "new_string": "version 41 revised"}}
+{"uuid": "mcp_e_042", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_042.txt", "old_string": "version 42", "new_string": "version 42 revised"}}
+{"uuid": "mcp_e_043", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_043.txt", "old_string": "version 43", "new_string": "version 43 revised"}}
+{"uuid": "mcp_e_044", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_044.txt", "old_string": "version 44", "new_string": "version 44 revised"}}
+{"uuid": "mcp_e_045", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_045.txt", "old_string": "version 45", "new_string": "version 45 revised"}}
+{"uuid": "mcp_e_046", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_046.txt", "old_string": "version 46", "new_string": "version 46 revised"}}
+{"uuid": "mcp_e_047", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_047.txt", "old_string": "version 47", "new_string": "version 47 revised"}}
+{"uuid": "mcp_e_048", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_048.txt", "old_string": "version 48", "new_string": "version 48 revised"}}
+{"uuid": "mcp_e_049", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_049.txt", "old_string": "version 49", "new_string": "version 49 revised"}}
+{"uuid": "mcp_e_050", "idx": 0, "tool": "edit_file", "arguments": {"path": "/tmp/mcpfix/edit/doc_050.txt", "old_string": "version 50", "new_string": "version 50 revised"}}

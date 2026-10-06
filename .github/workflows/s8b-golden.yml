@@ -1,0 +1,44 @@
+# s8b-golden.yml — coleta S8b (setup+verify mutating) em runners descartaveis.
+# Disparo manual (Actions > s8b-golden > Run workflow). Nada executa no host do dev.
+# Escopo: 16 stories windows_powershell (34 calls) + 8 stories bash (16 calls).
+# Artefatos: s8b_ps_results.jsonl + s8b_bash_results.jsonl.
+name: s8b-golden
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  ps-golden:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/golden
+          sparse-checkout-cone-mode: false
+      - name: Collect S8b PowerShell goldens
+        shell: powershell
+        run: |
+          powershell -NoProfile -NonInteractive -ExecutionPolicy Bypass -File .github/golden/collect-ps.ps1 -Calls .github/golden/s8b/ps_calls.jsonl -Out .github/golden/out/s8b_ps_results.jsonl
+      - uses: actions/upload-artifact@v4
+        with:
+          name: s8b_ps_results
+          path: .github/golden/out/s8b_ps_results.jsonl
+          retention-days: 30
+
+  bash-golden:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/golden
+          sparse-checkout-cone-mode: false
+      - name: Collect S8b bash goldens
+        shell: bash
+        run: python3 .github/golden/collect-bash.py --calls .github/golden/s8b/bash_calls.jsonl --out .github/golden/out/s8b_bash_results.jsonl
+      - uses: actions/upload-artifact@v4
+        with:
+          name: s8b_bash_results
+          path: .github/golden/out/s8b_bash_results.jsonl
+          retention-days: 30

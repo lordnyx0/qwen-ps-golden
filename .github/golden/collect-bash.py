@@ -64,7 +64,7 @@ def run(argv, timeout=TIMEOUT):
     except subprocess.TimeoutExpired:
         return False, 124, "", f"TIMEOUT (> {timeout}s)"
     except Exception as e:  # noqa: BLE001 - erros reais viram golden de falha
-        return False, 1, "", f"{type(e).__name__}: {e}"
+        return False, 1, "", f"{type(e).__name__}: {e}", ""
 
 
 def collect(call):
@@ -101,7 +101,7 @@ def collect(call):
                 f.write(data)
             return True, 0, f"wrote {len(data)} bytes to {p}", "", refused
         except Exception as e:  # noqa: BLE001
-            return False, 1, "", f"{type(e).__name__}: {e}"
+            return False, 1, "", f"{type(e).__name__}: {e}", ""
     if tool == "create_directory":
         p = str(args.get("path", ""))
         if not p or not _jailed(p):
@@ -110,7 +110,7 @@ def collect(call):
             os.makedirs(os.path.normpath(os.path.join("/tmp", p.lstrip("/"))), exist_ok=True)
             return True, 0, f"created {p}", "", refused
         except Exception as e:  # noqa: BLE001
-            return False, 1, "", f"{type(e).__name__}: {e}"
+            return False, 1, "", f"{type(e).__name__}: {e}", ""
     if tool == "move_file":
         s, d = str(args.get("source", "")), str(args.get("destination", ""))
         if not s or not d or not _jailed(s) or not _jailed(d):
@@ -122,7 +122,7 @@ def collect(call):
             shutil.move(src, dst)
             return True, 0, f"moved {s} -> {d}", "", refused
         except Exception as e:  # noqa: BLE001
-            return False, 1, "", f"{type(e).__name__}: {e}"
+            return False, 1, "", f"{type(e).__name__}: {e}", ""
     if tool == "edit_file":
         p, old, new = (str(args.get("path", "")), str(args.get("old_string", "")),
                        str(args.get("new_string", "")))
@@ -140,7 +140,7 @@ def collect(call):
                 f.write(text)
             return True, 0, f"replaced 1 occurrence in {p}", "", refused
         except Exception as e:  # noqa: BLE001
-            return False, 1, "", f"{type(e).__name__}: {e}"
+            return False, 1, "", f"{type(e).__name__}: {e}", ""
     return False, -1, "", "", f"unsupported tool: {tool}"
 
 

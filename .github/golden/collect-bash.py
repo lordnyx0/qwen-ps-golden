@@ -134,7 +134,7 @@ def collect(call):
                 text = f.read()
             n = text.count(old)
             if not n:
-                return False, 1, "", f"old_string not found in {p}"
+                return False, 1, "", f"old_string not found in {p}", ""
             text = text.replace(old, new, 1)
             with open(full, "w", encoding="utf-8") as f:
                 f.write(text)

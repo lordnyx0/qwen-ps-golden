@@ -1,0 +1,2 @@
+{"uuid": "s8b_ba_02f", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8b02; touch /tmp/s8b02/marker; ls -l /tmp/s8b02/marker"}}
+{"uuid": "s8b_ba_02f", "idx": 1, "tool": "bash", "arguments": {"command": "test -f /tmp/s8b02/marker && echo file-ok"}}

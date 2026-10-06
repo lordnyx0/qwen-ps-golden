@@ -1,0 +1,24 @@
+# golden-s7mcp3.yml — goldens S7 parte 3 (37 list_directory MCP, ubuntu).
+# Disparo manual. Nada executa no host do dev (jail /tmp no runner descartavel).
+name: s7mcp3-golden
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  s7mcp3:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/golden
+          sparse-checkout-cone-mode: false
+      - name: Collect S7MCP3 goldens
+        shell: bash
+        run: python3 .github/golden/collect-bash.py --calls .github/golden/s7/mcp3_calls.jsonl --out .github/golden/out/s7mcp3_results.jsonl
+      - uses: actions/upload-artifact@v4
+        with:
+          name: s7mcp3_results
+          path: .github/golden/out/s7mcp3_results.jsonl
+          retention-days: 30

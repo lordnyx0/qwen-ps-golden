@@ -128,6 +128,19 @@ def collect(call):
         return (*run(["bash", "-c", cmd]), refused)
     if tool == "list_dir":
         return (*run(["ls", "-la", "--", str(args.get("path", "."))]), refused)
+    if tool == "list_directory":
+        p = str(args.get("path", ""))
+        if not p or not _jailed(p):
+            return False, 126, "", "", "REFUSED: vazio ou fora de /tmp"
+        try:
+            full = _resolve(p)
+            out = []
+            for name in sorted(os.listdir(full)):
+                tag = "[DIR]" if os.path.isdir(os.path.join(full, name)) else "[FILE]"
+                out.append(f"{tag} {name}")
+            return True, 0, "\n".join(out) + ("\n" if out else ""), "", refused
+        except Exception as e:  # noqa: BLE001
+            return False, 1, "", f"{type(e).__name__}: {e}", ""
     if tool == "read_file":
         ok, code, out, err = run(["cat", "--", str(args.get("path", ""))])
         return ok, code, out[:MAX_CHARS], err, refused

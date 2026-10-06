@@ -33,11 +33,19 @@ def trunc(s):
     return s
 
 
+def _resolve(path):
+    """Caminho absoluto canônico se dentro de /tmp, senao None (jail)."""
+    p = str(path or "")
+    full = os.path.normpath(p if os.path.isabs(p) else os.path.join("/tmp", p.lstrip("/")))
+    real = os.path.realpath(full)
+    if real == "/tmp" or real.startswith("/tmp" + os.sep):
+        return real
+    return None
+
+
 def _jailed(path):
     """So aceita paths dentro de /tmp (resolve .. e links)."""
-    full = os.path.normpath(os.path.join("/tmp", str(path or "").lstrip("/")))
-    real = os.path.realpath(full)
-    return real == "/tmp" or real.startswith("/tmp" + os.sep)
+    return _resolve(path) is not None
 
 
 def setup_fixture():
@@ -94,7 +102,7 @@ def collect(call):
         if not p or not _jailed(p):
             return False, 126, "", "", "REFUSED: fora de /tmp"
         try:
-            full = os.path.normpath(os.path.join("/tmp", p.lstrip("/")))
+            full = _resolve(p) or ""
             os.makedirs(os.path.dirname(full), exist_ok=True)
             data = content.encode("utf-8")
             with open(full, "wb") as f:
@@ -107,7 +115,7 @@ def collect(call):
         if not p or not _jailed(p):
             return False, 126, "", "", "REFUSED: fora de /tmp"
         try:
-            os.makedirs(os.path.normpath(os.path.join("/tmp", p.lstrip("/"))), exist_ok=True)
+            os.makedirs(_resolve(p) or "", exist_ok=True)
             return True, 0, f"created {p}", "", refused
         except Exception as e:  # noqa: BLE001
             return False, 1, "", f"{type(e).__name__}: {e}", ""
@@ -116,8 +124,8 @@ def collect(call):
         if not s or not d or not _jailed(s) or not _jailed(d):
             return False, 126, "", "", "REFUSED: fora de /tmp"
         try:
-            src = os.path.normpath(os.path.join("/tmp", s.lstrip("/")))
-            dst = os.path.normpath(os.path.join("/tmp", d.lstrip("/")))
+            src = _resolve(s) or ""
+            dst = _resolve(d) or ""
             os.makedirs(os.path.dirname(dst), exist_ok=True)
             shutil.move(src, dst)
             return True, 0, f"moved {s} -> {d}", "", refused
@@ -129,7 +137,7 @@ def collect(call):
         if not p or not old or not _jailed(p):
             return False, 126, "", "", "REFUSED: vazio ou fora de /tmp"
         try:
-            full = os.path.normpath(os.path.join("/tmp", p.lstrip("/")))
+            full = _resolve(p) or ""
             with open(full, "r", encoding="utf-8") as f:
                 text = f.read()
             n = text.count(old)

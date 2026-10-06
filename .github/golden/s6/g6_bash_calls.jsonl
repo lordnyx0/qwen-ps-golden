@@ -1,0 +1,37 @@
+{"uuid": "g6_sh_ro_01", "idx": 0, "tool": "bash", "arguments": {"command": "ls /tmp"}}
+{"uuid": "g6_sh_ro_02", "idx": 0, "tool": "bash", "arguments": {"command": "du -sh /tmp"}}
+{"uuid": "g6_sh_ro_03", "idx": 0, "tool": "bash", "arguments": {"command": "df -h /tmp"}}
+{"uuid": "g6_sh_ro_04", "idx": 0, "tool": "bash", "arguments": {"command": "find /tmp -maxdepth 1 -type f | head -n 5"}}
+{"uuid": "g6_sh_ro_05", "idx": 0, "tool": "bash", "arguments": {"command": "test -f /etc/hostname && echo present"}}
+{"uuid": "g6_sh_ro_06", "idx": 0, "tool": "bash", "arguments": {"command": "grep -c localhost /etc/hosts"}}
+{"uuid": "g6_sh_ro_07", "idx": 0, "tool": "bash", "arguments": {"command": "wc -l /etc/hosts"}}
+{"uuid": "g6_sh_ro_08", "idx": 0, "tool": "bash", "arguments": {"command": "stat -c '%s' /etc/hostname"}}
+{"uuid": "g6_sh_ro_09", "idx": 0, "tool": "bash", "arguments": {"command": "cat /etc/hostname"}}
+{"uuid": "g6_sh_ro_10", "idx": 0, "tool": "bash", "arguments": {"command": "head -n 3 /etc/hosts"}}
+{"uuid": "g6_sh_ro_11", "idx": 0, "tool": "bash", "arguments": {"command": "tail -n 3 /etc/hosts"}}
+{"uuid": "g6_sh_ro_12", "idx": 0, "tool": "bash", "arguments": {"command": "ls -d /tmp/*/"}}
+{"uuid": "g6_sh_ro_13", "idx": 0, "tool": "bash", "arguments": {"command": "du --max-depth=1 /tmp"}}
+{"uuid": "g6_sh_ro_14", "idx": 0, "tool": "bash", "arguments": {"command": "df -h /"}}
+{"uuid": "g6_sh_ro_15", "idx": 0, "tool": "bash", "arguments": {"command": "test -d /tmp/g6missing; echo $?"}}
+{"uuid": "g6_sh_ro_16", "idx": 0, "tool": "bash", "arguments": {"command": "ls /var/log | head -n 10"}}
+{"uuid": "g6_sh_ro_17", "idx": 0, "tool": "bash", "arguments": {"command": "find /etc -maxdepth 1 -name 'hosts*'"}}
+{"uuid": "g6_sh_ro_18", "idx": 0, "tool": "bash", "arguments": {"command": "ls -la /etc/hostname"}}
+{"uuid": "g6_sh_ro_19", "idx": 0, "tool": "bash", "arguments": {"command": "ls /tmp | wc -l"}}
+{"uuid": "g6_sh_ro_20", "idx": 0, "tool": "bash", "arguments": {"command": "test -d /tmp && echo yes"}}
+{"uuid": "g6_sh_mu_01", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/g6sh01"}}
+{"uuid": "g6_sh_mu_02", "idx": 0, "tool": "bash", "arguments": {"command": "touch /tmp/g6sh02/marker"}}
+{"uuid": "g6_sh_mu_03", "idx": 0, "tool": "bash", "arguments": {"command": "cp /etc/hostname /tmp/g6sh03/hostname.bak"}}
+{"uuid": "g6_sh_mu_04", "idx": 0, "tool": "bash", "arguments": {"command": "touch /tmp/g6sh04/a; mv /tmp/g6sh04/a /tmp/g6sh04/b"}}
+{"uuid": "g6_sh_mu_05", "idx": 0, "tool": "bash", "arguments": {"command": "echo 'build ok' | tee /tmp/g6sh05/out.txt"}}
+{"uuid": "g6_sh_mu_06", "idx": 0, "tool": "bash", "arguments": {"command": "ln -sf /etc/hostname /tmp/g6sh06/hostlink"}}
+{"uuid": "g6_sh_mu_07", "idx": 0, "tool": "bash", "arguments": {"command": "printf 'run 7 ok\n' > /tmp/g6sh07/out.txt"}}
+{"uuid": "g6_sh_mu_08", "idx": 0, "tool": "bash", "arguments": {"command": "printf 'l1\n' > /tmp/g6sh08/f; echo 'l2' >> /tmp/g6sh08/f"}}
+{"uuid": "g6_sh_mu_09", "idx": 0, "tool": "bash", "arguments": {"command": "mktemp -d /tmp/g6sh09.XXXX"}}
+{"uuid": "g6_sh_mu_10", "idx": 0, "tool": "bash", "arguments": {"command": "fallocate -l 1K /tmp/g6sh10/place.bin"}}
+{"uuid": "g6_sh_mu_11", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/g6sh11/a/b/c"}}
+{"uuid": "g6_sh_mu_12", "idx": 0, "tool": "bash", "arguments": {"command": "cp /etc/hosts /tmp/g6sh12/h1; cp /tmp/g6sh12/h1 /tmp/g6sh12/h2"}}
+{"uuid": "g6_sh_mu_13", "idx": 0, "tool": "bash", "arguments": {"command": "touch /tmp/g6sh13/a /tmp/g6sh13/b /tmp/g6sh13/c"}}
+{"uuid": "g6_sh_mu_14", "idx": 0, "tool": "bash", "arguments": {"command": "echo start > /tmp/g6sh14/run.log; echo step2 >> /tmp/g6sh14/run.log"}}
+{"uuid": "g6_sh_mu_15", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/g6sh15; printf 'g6\n' > /tmp/g6sh15/manifest.txt"}}
+{"uuid": "g6_sh_mu_16", "idx": 0, "tool": "bash", "arguments": {"command": "cp /etc/hostname /tmp/g6sh16/h; echo '# g6' >> /tmp/g6sh16/h"}}
+{"uuid": "g6_sh_mu_17", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/g6sh17; touch /tmp/g6sh17/x /tmp/g6sh17/y"}}

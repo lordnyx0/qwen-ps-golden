@@ -17,7 +17,7 @@ MAX_CHARS = 32768
 BLOCK = re.compile(
     r"(rm\s+-rf\s+/( |$)|mkfs|dd\s+if=|:?\(\)\s*\{\s*:\s*\|\s*:\s*&\s*\}\s*;?\s*:|"
     r"chmod|chown|sudo|shutdown|reboot|halt|poweroff|mkswap|swapon|"
-    r"curl.*\|\s*(ba)?sh|wget.*\|\s*(ba)?sh|nc\s+-l|ncat|meterpreter|mimikatz|"
+    r"curl.*\|\s*(ba)?sh|wget.*\|\s*(ba)?sh|nc\s+-l|\bncat\b|meterpreter|mimikatz|"
     r"downloadstring|invoke-)",
     re.I,
 )

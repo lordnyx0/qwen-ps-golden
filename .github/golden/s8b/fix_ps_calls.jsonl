@@ -1,0 +1,10 @@
+{"uuid": "s8b_ps_02f", "idx": 0, "tool": "powershell", "arguments": {"command": "set-content -path $env:TEMP\\s8b02.txt -value s8b-alpha; get-content -path $env:TEMP\\s8b02.txt"}}
+{"uuid": "s8b_ps_02f", "idx": 1, "tool": "powershell", "arguments": {"command": "get-content -path $env:TEMP\\s8b02.txt -totalcount 1"}}
+{"uuid": "s8b_ps_03f", "idx": 0, "tool": "powershell", "arguments": {"command": "add-content -path $env:TEMP\\s8b03.log -value line-one; get-content -path $env:TEMP\\s8b03.log"}}
+{"uuid": "s8b_ps_03f", "idx": 1, "tool": "powershell", "arguments": {"command": "add-content -path $env:TEMP\\s8b03.log -value line-two; get-content -path $env:TEMP\\s8b03.log | measure-object -line | select-object -expandproperty lines"}}
+{"uuid": "s8b_ps_04f", "idx": 0, "tool": "powershell", "arguments": {"command": "set-content -path $env:TEMP\\s8b04.csv -value header-AB; add-content -path $env:TEMP\\s8b04.csv -value row-11; get-content -path $env:TEMP\\s8b04.csv"}}
+{"uuid": "s8b_ps_04f", "idx": 1, "tool": "powershell", "arguments": {"command": "get-content -path $env:TEMP\\s8b04.csv | measure-object -line | select-object -expandproperty lines"}}
+{"uuid": "s8b_ps_10f", "idx": 0, "tool": "powershell", "arguments": {"command": "new-item -path $env:TEMP\\s8b10 -itemtype directory -force; echo s8b-build-ok > $env:TEMP\\s8b10\\t.txt; get-content -path $env:TEMP\\s8b10\\t.txt"}}
+{"uuid": "s8b_ps_10f", "idx": 1, "tool": "powershell", "arguments": {"command": "get-content -path $env:TEMP\\s8b10\\t.txt | measure-object -character | select-object -expandproperty characters"}}
+{"uuid": "s8b_ps_13f", "idx": 0, "tool": "powershell", "arguments": {"command": "set-content -path $env:TEMP\\s8b13.txt -value build=114; get-content -path $env:TEMP\\s8b13.txt -raw"}}
+{"uuid": "s8b_ps_13f", "idx": 1, "tool": "powershell", "arguments": {"command": "get-item -path $env:TEMP\\s8b13.txt | select-object -expandproperty length"}}

@@ -99,7 +99,7 @@ def collect(call):
             data = content.encode("utf-8")
             with open(full, "wb") as f:
                 f.write(data)
-            return True, 0, f"wrote {len(data)} bytes to {p}", ""
+            return True, 0, f"wrote {len(data)} bytes to {p}", "", refused
         except Exception as e:  # noqa: BLE001
             return False, 1, "", f"{type(e).__name__}: {e}"
     if tool == "create_directory":
@@ -108,7 +108,7 @@ def collect(call):
             return False, 126, "", "", "REFUSED: fora de /tmp"
         try:
             os.makedirs(os.path.normpath(os.path.join("/tmp", p.lstrip("/"))), exist_ok=True)
-            return True, 0, f"created {p}", ""
+            return True, 0, f"created {p}", "", refused
         except Exception as e:  # noqa: BLE001
             return False, 1, "", f"{type(e).__name__}: {e}"
     if tool == "move_file":
@@ -120,7 +120,7 @@ def collect(call):
             dst = os.path.normpath(os.path.join("/tmp", d.lstrip("/")))
             os.makedirs(os.path.dirname(dst), exist_ok=True)
             shutil.move(src, dst)
-            return True, 0, f"moved {s} -> {d}", ""
+            return True, 0, f"moved {s} -> {d}", "", refused
         except Exception as e:  # noqa: BLE001
             return False, 1, "", f"{type(e).__name__}: {e}"
     if tool == "edit_file":
@@ -138,7 +138,7 @@ def collect(call):
             text = text.replace(old, new, 1)
             with open(full, "w", encoding="utf-8") as f:
                 f.write(text)
-            return True, 0, f"replaced 1 occurrence in {p}", ""
+            return True, 0, f"replaced 1 occurrence in {p}", "", refused
         except Exception as e:  # noqa: BLE001
             return False, 1, "", f"{type(e).__name__}: {e}"
     return False, -1, "", "", f"unsupported tool: {tool}"

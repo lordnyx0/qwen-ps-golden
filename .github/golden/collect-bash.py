@@ -48,11 +48,21 @@ def _jailed(path):
     return _resolve(path) is not None
 
 
+PNG_1X1 = ("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGA"
+           "hKmMIQAAAABJRU5ErkJggg==")
+
+SVG_TPL = ('<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}">'
+           "<title>{t}</title><rect width=\"{w}\" height=\"{h}\" fill=\"#{c}\"/></svg>\n")
+
+
 def setup_fixture():
-    """Monta /tmp/mcpfix (idempotente): move/src_NN + edit/doc_NN."""
+    """Monta /tmp/mcpfix (idempotente): move/src_NN + edit/doc_NN + read/ + media/."""
+    import base64
     base = "/tmp/mcpfix"
     os.makedirs(os.path.join(base, "move"), exist_ok=True)
     os.makedirs(os.path.join(base, "edit"), exist_ok=True)
+    os.makedirs(os.path.join(base, "read"), exist_ok=True)
+    os.makedirs(os.path.join(base, "media"), exist_ok=True)
     os.makedirs("/tmp/mcpw", exist_ok=True)
     for i in range(1, 51):
         fp = os.path.join(base, "move", f"src_{i:03d}.txt")
@@ -63,6 +73,36 @@ def setup_fixture():
         if not os.path.exists(fp):
             with open(fp, "w", encoding="utf-8") as f:
                 f.write(f"doc {i} version {i}\n")
+    names = ["acorn", "birch", "clover", "dune", "elm", "fern", "gale", "heath", "iris", "jade",
+             "kestrel", "lark", "maple", "north", "opal", "pine", "quill", "rowan", "spruce", "thyme",
+             "ursa", "vetch", "wren", "yarrow", "zinc", "alto", "brisk", "cinder", "drift", "ember",
+             "frost", "glade", "harbor", "inlet", "jetty", "knoll", "ledge", "marsh", "niche", "oasis",
+             "plaza", "quay", "ridge", "shoal", "terrace", "upland", "vista", "wharf", "yonder", "zenith"]
+    for i, nm in enumerate(names, 1):
+        fp = os.path.join(base, "read", f"{nm}_{i:03d}.txt")
+        if not os.path.exists(fp):
+            with open(fp, "w", encoding="utf-8") as f:
+                f.write(f"{nm} notes {i}\nline two of {nm}\nmarker_{nm} present here\n"
+                        f"count {i * 3}\nend of {nm}\n")
+    media = [("logo.png", None), ("photo.png", None), ("thumb.png", None),
+             ("banner.svg", ("120", "40", "banner", "336699")),
+             ("icon.svg", ("16", "16", "icon", "cc0000")),
+             ("diagram.svg", ("400", "300", "diagram", "00aa55")),
+             ("badge.svg", ("88", "20", "badge", "ffcc00")),
+             ("chart.svg", ("200", "100", "chart", "5555ff")),
+             ("map.svg", ("300", "200", "map", "77aa77")),
+             ("hero.svg", ("640", "200", "hero", "222222"))]
+    for fn, spec in media:
+        fp = os.path.join(base, "media", fn)
+        if os.path.exists(fp):
+            continue
+        if spec is None:
+            with open(fp, "wb") as f:
+                f.write(base64.b64decode(PNG_1X1))
+        else:
+            w, h, t, c = spec
+            with open(fp, "w", encoding="utf-8") as f:
+                f.write(SVG_TPL.format(w=w, h=h, t=t, c=c))
 
 
 def run(argv, timeout=TIMEOUT):
@@ -147,6 +187,101 @@ def collect(call):
             with open(full, "w", encoding="utf-8") as f:
                 f.write(text)
             return True, 0, f"replaced 1 occurrence in {p}", "", refused
+        except Exception as e:  # noqa: BLE001
+            return False, 1, "", f"{type(e).__name__}: {e}", ""
+    if tool == "read_text_file":
+        p = str(args.get("path", ""))
+        if not p or not _jailed(p):
+            return False, 126, "", "", "REFUSED: vazio ou fora de /tmp"
+        head, tail = args.get("head"), args.get("tail")
+        if head is not None and tail is not None:
+            return False, 1, "", "cannot specify both head and tail", ""
+        try:
+            full = _resolve(p)
+            with open(full, "r", encoding="utf-8") as f:
+                lines = f.read().splitlines()
+            if head is not None:
+                lines = lines[:max(0, int(head))]
+            elif tail is not None:
+                lines = lines[max(0, len(lines) - int(tail)):]
+            return True, 0, "\n".join(lines) + ("\n" if lines else ""), ""
+        except Exception as e:  # noqa: BLE001
+            return False, 1, "", f"{type(e).__name__}: {e}", ""
+    if tool == "read_multiple_files":
+        paths = args.get("paths", []) or []
+        if not isinstance(paths, list) or not paths:
+            return False, 126, "", "", "REFUSED: paths vazio"
+        for p in paths:
+            if not _jailed(p):
+                return False, 126, "", "", "REFUSED: fora de /tmp"
+        try:
+            chunks = []
+            for p in paths:
+                with open(_resolve(p), "r", encoding="utf-8") as f:
+                    chunks.append(f"--- {p} ---\n" + f.read())
+            return True, 0, "".join(chunks), ""
+        except Exception as e:  # noqa: BLE001
+            return False, 1, "", f"{type(e).__name__}: {e}", ""
+    if tool == "read_media_file":
+        p = str(args.get("path", ""))
+        if not p or not _jailed(p):
+            return False, 126, "", "", "REFUSED: vazio ou fora de /tmp"
+        try:
+            full = _resolve(p)
+            with open(full, "rb") as f:
+                data = f.read()
+            if data[:8] == b"\x89PNG\r\n\x1a\n":
+                kind = "PNG"
+            elif data.lstrip()[:4] == b"<svg" or b"<svg" in data[:200]:
+                kind = "SVG"
+            else:
+                kind = "BIN"
+            return True, 0, f"{kind} {len(data)} bytes: {p}", ""
+        except Exception as e:  # noqa: BLE001
+            return False, 1, "", f"{type(e).__name__}: {e}", ""
+    if tool == "list_directory_with_sizes":
+        p = str(args.get("path", ""))
+        if not p or not _jailed(p):
+            return False, 126, "", "", "REFUSED: vazio ou fora de /tmp"
+        try:
+            full = _resolve(p)
+            out = []
+            for name in sorted(os.listdir(full)):
+                fp = os.path.join(full, name)
+                out.append(f"{name}: {os.path.getsize(fp)} bytes")
+            return True, 0, "\n".join(out) + ("\n" if out else ""), ""
+        except Exception as e:  # noqa: BLE001
+            return False, 1, "", f"{type(e).__name__}: {e}", ""
+    if tool == "directory_tree":
+        p = str(args.get("path", ""))
+        if not p or not _jailed(p):
+            return False, 126, "", "", "REFUSED: vazio ou fora de /tmp"
+        try:
+            full = _resolve(p)
+            out = []
+            for root, dirs, files in os.walk(full):
+                dirs.sort()
+                rel = os.path.relpath(root, full)
+                depth = 0 if rel == "." else rel.count(os.sep) + 1
+                out.append(("  " * depth) + (os.path.basename(full) if rel == "." else os.path.basename(root)))
+                for fn in sorted(files):
+                    out.append(("  " * (depth + 1)) + fn)
+            return True, 0, "\n".join(out) + "\n", ""
+        except Exception as e:  # noqa: BLE001
+            return False, 1, "", f"{type(e).__name__}: {e}", ""
+    if tool == "search_files":
+        pat, scope = str(args.get("pattern", "")), str(args.get("path", "/tmp/mcpfix"))
+        if not pat or not _jailed(scope):
+            return False, 126, "", "", "REFUSED: vazio ou fora de /tmp"
+        return (*run(["grep", "-rn", "--", pat, _resolve(scope)]), refused)
+    if tool == "get_file_info":
+        p = str(args.get("path", ""))
+        if not p or not _jailed(p):
+            return False, 126, "", "", "REFUSED: vazio ou fora de /tmp"
+        try:
+            full = _resolve(p)
+            kind = "dir" if os.path.isdir(full) else "file"
+            return True, 0, f"{p}: {kind}, {os.path.getsize(full)} bytes", ""
         except Exception as e:  # noqa: BLE001
             return False, 1, "", f"{type(e).__name__}: {e}", ""
     return False, -1, "", "", f"unsupported tool: {tool}"

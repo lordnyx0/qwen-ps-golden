@@ -1,0 +1,350 @@
+{"uuid": "mcp_r_001", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/acorn_001.txt"}}
+{"uuid": "mcp_r_002", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/birch_002.txt"}}
+{"uuid": "mcp_r_003", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/clover_003.txt"}}
+{"uuid": "mcp_r_004", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/dune_004.txt"}}
+{"uuid": "mcp_r_005", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/elm_005.txt"}}
+{"uuid": "mcp_r_006", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/fern_006.txt"}}
+{"uuid": "mcp_r_007", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/gale_007.txt"}}
+{"uuid": "mcp_r_008", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/heath_008.txt"}}
+{"uuid": "mcp_r_009", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/iris_009.txt"}}
+{"uuid": "mcp_r_010", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/jade_010.txt"}}
+{"uuid": "mcp_r_011", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/kestrel_011.txt"}}
+{"uuid": "mcp_r_012", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/lark_012.txt"}}
+{"uuid": "mcp_r_013", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/maple_013.txt"}}
+{"uuid": "mcp_r_014", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/north_014.txt"}}
+{"uuid": "mcp_r_015", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/opal_015.txt"}}
+{"uuid": "mcp_r_016", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/pine_016.txt"}}
+{"uuid": "mcp_r_017", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/quill_017.txt"}}
+{"uuid": "mcp_r_018", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/rowan_018.txt"}}
+{"uuid": "mcp_r_019", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/spruce_019.txt"}}
+{"uuid": "mcp_r_020", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/thyme_020.txt"}}
+{"uuid": "mcp_r_021", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/ursa_021.txt"}}
+{"uuid": "mcp_r_022", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/vetch_022.txt"}}
+{"uuid": "mcp_r_023", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/wren_023.txt"}}
+{"uuid": "mcp_r_024", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/yarrow_024.txt"}}
+{"uuid": "mcp_r_025", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/zinc_025.txt"}}
+{"uuid": "mcp_r_026", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/alto_026.txt"}}
+{"uuid": "mcp_r_027", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/brisk_027.txt"}}
+{"uuid": "mcp_r_028", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/cinder_028.txt"}}
+{"uuid": "mcp_r_029", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/drift_029.txt"}}
+{"uuid": "mcp_r_030", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/ember_030.txt"}}
+{"uuid": "mcp_r_031", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/frost_031.txt"}}
+{"uuid": "mcp_r_032", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/glade_032.txt"}}
+{"uuid": "mcp_r_033", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/harbor_033.txt"}}
+{"uuid": "mcp_r_034", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/inlet_034.txt"}}
+{"uuid": "mcp_r_035", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/jetty_035.txt"}}
+{"uuid": "mcp_r_036", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/knoll_036.txt", "head": 3}}
+{"uuid": "mcp_r_037", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/ledge_037.txt", "head": 3}}
+{"uuid": "mcp_r_038", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/marsh_038.txt", "head": 3}}
+{"uuid": "mcp_r_039", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/niche_039.txt", "head": 3}}
+{"uuid": "mcp_r_040", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/oasis_040.txt", "head": 3}}
+{"uuid": "mcp_r_041", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/plaza_041.txt", "head": 3}}
+{"uuid": "mcp_r_042", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/quay_042.txt", "head": 3}}
+{"uuid": "mcp_r_043", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/ridge_043.txt", "head": 3}}
+{"uuid": "mcp_r_044", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/shoal_044.txt", "tail": 2}}
+{"uuid": "mcp_r_045", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/terrace_045.txt", "tail": 2}}
+{"uuid": "mcp_r_046", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/upland_046.txt", "tail": 2}}
+{"uuid": "mcp_r_047", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/vista_047.txt", "tail": 2}}
+{"uuid": "mcp_r_048", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/wharf_048.txt", "tail": 2}}
+{"uuid": "mcp_r_049", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/yonder_049.txt", "tail": 2}}
+{"uuid": "mcp_r_050", "idx": 0, "tool": "read_text_file", "arguments": {"path": "/tmp/mcpfix/read/zenith_050.txt", "tail": 2}}
+{"uuid": "mcp_rm_001", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/acorn_001.txt", "/tmp/mcpfix/read/heath_008.txt"]}}
+{"uuid": "mcp_rm_002", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/kestrel_011.txt", "/tmp/mcpfix/read/birch_002.txt"]}}
+{"uuid": "mcp_rm_003", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/clover_003.txt", "/tmp/mcpfix/read/north_014.txt"]}}
+{"uuid": "mcp_rm_004", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/quill_017.txt", "/tmp/mcpfix/read/dune_004.txt"]}}
+{"uuid": "mcp_rm_005", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/elm_005.txt", "/tmp/mcpfix/read/thyme_020.txt"]}}
+{"uuid": "mcp_rm_006", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/wren_023.txt", "/tmp/mcpfix/read/fern_006.txt"]}}
+{"uuid": "mcp_rm_007", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/gale_007.txt", "/tmp/mcpfix/read/alto_026.txt"]}}
+{"uuid": "mcp_rm_008", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/drift_029.txt", "/tmp/mcpfix/read/heath_008.txt"]}}
+{"uuid": "mcp_rm_009", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/iris_009.txt", "/tmp/mcpfix/read/glade_032.txt"]}}
+{"uuid": "mcp_rm_010", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/jetty_035.txt", "/tmp/mcpfix/read/jade_010.txt"]}}
+{"uuid": "mcp_rm_011", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/kestrel_011.txt", "/tmp/mcpfix/read/marsh_038.txt"]}}
+{"uuid": "mcp_rm_012", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/plaza_041.txt", "/tmp/mcpfix/read/lark_012.txt"]}}
+{"uuid": "mcp_rm_013", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/maple_013.txt", "/tmp/mcpfix/read/shoal_044.txt"]}}
+{"uuid": "mcp_rm_014", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/vista_047.txt", "/tmp/mcpfix/read/north_014.txt"]}}
+{"uuid": "mcp_rm_015", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/opal_015.txt", "/tmp/mcpfix/read/zenith_050.txt"]}}
+{"uuid": "mcp_rm_016", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/clover_003.txt", "/tmp/mcpfix/read/pine_016.txt"]}}
+{"uuid": "mcp_rm_017", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/quill_017.txt", "/tmp/mcpfix/read/fern_006.txt"]}}
+{"uuid": "mcp_rm_018", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/iris_009.txt", "/tmp/mcpfix/read/rowan_018.txt"]}}
+{"uuid": "mcp_rm_019", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/spruce_019.txt", "/tmp/mcpfix/read/lark_012.txt"]}}
+{"uuid": "mcp_rm_020", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/opal_015.txt", "/tmp/mcpfix/read/thyme_020.txt"]}}
+{"uuid": "mcp_rm_021", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/ursa_021.txt", "/tmp/mcpfix/read/rowan_018.txt"]}}
+{"uuid": "mcp_rm_022", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/ursa_021.txt", "/tmp/mcpfix/read/vetch_022.txt"]}}
+{"uuid": "mcp_rm_023", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/wren_023.txt", "/tmp/mcpfix/read/yarrow_024.txt"]}}
+{"uuid": "mcp_rm_024", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/brisk_027.txt", "/tmp/mcpfix/read/yarrow_024.txt"]}}
+{"uuid": "mcp_rm_025", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/zinc_025.txt", "/tmp/mcpfix/read/ember_030.txt"]}}
+{"uuid": "mcp_rm_026", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/harbor_033.txt", "/tmp/mcpfix/read/alto_026.txt"]}}
+{"uuid": "mcp_rm_027", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/brisk_027.txt", "/tmp/mcpfix/read/knoll_036.txt"]}}
+{"uuid": "mcp_rm_028", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/niche_039.txt", "/tmp/mcpfix/read/cinder_028.txt"]}}
+{"uuid": "mcp_rm_029", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/drift_029.txt", "/tmp/mcpfix/read/quay_042.txt"]}}
+{"uuid": "mcp_rm_030", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/terrace_045.txt", "/tmp/mcpfix/read/ember_030.txt"]}}
+{"uuid": "mcp_rm_031", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/frost_031.txt", "/tmp/mcpfix/read/wharf_048.txt"]}}
+{"uuid": "mcp_rm_032", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/acorn_001.txt", "/tmp/mcpfix/read/glade_032.txt"]}}
+{"uuid": "mcp_rm_033", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/harbor_033.txt", "/tmp/mcpfix/read/dune_004.txt"]}}
+{"uuid": "mcp_rm_034", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/gale_007.txt", "/tmp/mcpfix/read/inlet_034.txt"]}}
+{"uuid": "mcp_rm_035", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/jetty_035.txt", "/tmp/mcpfix/read/jade_010.txt"]}}
+{"uuid": "mcp_rm_036", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/maple_013.txt", "/tmp/mcpfix/read/knoll_036.txt"]}}
+{"uuid": "mcp_rm_037", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/ledge_037.txt", "/tmp/mcpfix/read/pine_016.txt"]}}
+{"uuid": "mcp_rm_038", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/spruce_019.txt", "/tmp/mcpfix/read/marsh_038.txt"]}}
+{"uuid": "mcp_rm_039", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/niche_039.txt", "/tmp/mcpfix/read/vetch_022.txt"]}}
+{"uuid": "mcp_rm_040", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/zinc_025.txt", "/tmp/mcpfix/read/oasis_040.txt"]}}
+{"uuid": "mcp_rm_041", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/plaza_041.txt", "/tmp/mcpfix/read/cinder_028.txt"]}}
+{"uuid": "mcp_rm_042", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/frost_031.txt", "/tmp/mcpfix/read/quay_042.txt"]}}
+{"uuid": "mcp_rm_043", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/ridge_043.txt", "/tmp/mcpfix/read/inlet_034.txt"]}}
+{"uuid": "mcp_rm_044", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/ledge_037.txt", "/tmp/mcpfix/read/shoal_044.txt"]}}
+{"uuid": "mcp_rm_045", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/terrace_045.txt", "/tmp/mcpfix/read/oasis_040.txt"]}}
+{"uuid": "mcp_rm_046", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/ridge_043.txt", "/tmp/mcpfix/read/upland_046.txt"]}}
+{"uuid": "mcp_rm_047", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/vista_047.txt", "/tmp/mcpfix/read/upland_046.txt"]}}
+{"uuid": "mcp_rm_048", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/yonder_049.txt", "/tmp/mcpfix/read/wharf_048.txt"]}}
+{"uuid": "mcp_rm_049", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/yonder_049.txt", "/tmp/mcpfix/read/birch_002.txt"]}}
+{"uuid": "mcp_rm_050", "idx": 0, "tool": "read_multiple_files", "arguments": {"paths": ["/tmp/mcpfix/read/elm_005.txt", "/tmp/mcpfix/read/zenith_050.txt"]}}
+{"uuid": "mcp_md_001", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/logo.png"}}
+{"uuid": "mcp_md_002", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/banner.svg"}}
+{"uuid": "mcp_md_003", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/icon.svg"}}
+{"uuid": "mcp_md_004", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/diagram.svg"}}
+{"uuid": "mcp_md_005", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/photo.png"}}
+{"uuid": "mcp_md_006", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/badge.svg"}}
+{"uuid": "mcp_md_007", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/chart.svg"}}
+{"uuid": "mcp_md_008", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/thumb.png"}}
+{"uuid": "mcp_md_009", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/map.svg"}}
+{"uuid": "mcp_md_010", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/hero.svg"}}
+{"uuid": "mcp_md_011", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/logo.png"}}
+{"uuid": "mcp_md_012", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/banner.svg"}}
+{"uuid": "mcp_md_013", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/icon.svg"}}
+{"uuid": "mcp_md_014", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/diagram.svg"}}
+{"uuid": "mcp_md_015", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/photo.png"}}
+{"uuid": "mcp_md_016", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/badge.svg"}}
+{"uuid": "mcp_md_017", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/chart.svg"}}
+{"uuid": "mcp_md_018", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/thumb.png"}}
+{"uuid": "mcp_md_019", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/map.svg"}}
+{"uuid": "mcp_md_020", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/hero.svg"}}
+{"uuid": "mcp_md_021", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/logo.png"}}
+{"uuid": "mcp_md_022", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/banner.svg"}}
+{"uuid": "mcp_md_023", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/icon.svg"}}
+{"uuid": "mcp_md_024", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/diagram.svg"}}
+{"uuid": "mcp_md_025", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/photo.png"}}
+{"uuid": "mcp_md_026", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/badge.svg"}}
+{"uuid": "mcp_md_027", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/chart.svg"}}
+{"uuid": "mcp_md_028", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/thumb.png"}}
+{"uuid": "mcp_md_029", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/map.svg"}}
+{"uuid": "mcp_md_030", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/hero.svg"}}
+{"uuid": "mcp_md_031", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/logo.png"}}
+{"uuid": "mcp_md_032", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/banner.svg"}}
+{"uuid": "mcp_md_033", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/icon.svg"}}
+{"uuid": "mcp_md_034", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/diagram.svg"}}
+{"uuid": "mcp_md_035", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/photo.png"}}
+{"uuid": "mcp_md_036", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/badge.svg"}}
+{"uuid": "mcp_md_037", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/chart.svg"}}
+{"uuid": "mcp_md_038", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/thumb.png"}}
+{"uuid": "mcp_md_039", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/map.svg"}}
+{"uuid": "mcp_md_040", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/hero.svg"}}
+{"uuid": "mcp_md_041", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/logo.png"}}
+{"uuid": "mcp_md_042", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/banner.svg"}}
+{"uuid": "mcp_md_043", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/icon.svg"}}
+{"uuid": "mcp_md_044", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/diagram.svg"}}
+{"uuid": "mcp_md_045", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/photo.png"}}
+{"uuid": "mcp_md_046", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/badge.svg"}}
+{"uuid": "mcp_md_047", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/chart.svg"}}
+{"uuid": "mcp_md_048", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/thumb.png"}}
+{"uuid": "mcp_md_049", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/map.svg"}}
+{"uuid": "mcp_md_050", "idx": 0, "tool": "read_media_file", "arguments": {"path": "/tmp/mcpfix/media/hero.svg"}}
+{"uuid": "mcp_z_001", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_z_002", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_z_003", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/edit"}}
+{"uuid": "mcp_z_004", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/move"}}
+{"uuid": "mcp_z_005", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_z_006", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpw"}}
+{"uuid": "mcp_z_007", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_z_008", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_z_009", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/edit"}}
+{"uuid": "mcp_z_010", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/move"}}
+{"uuid": "mcp_z_011", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_z_012", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpw"}}
+{"uuid": "mcp_z_013", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_z_014", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_z_015", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/edit"}}
+{"uuid": "mcp_z_016", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/move"}}
+{"uuid": "mcp_z_017", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_z_018", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpw"}}
+{"uuid": "mcp_z_019", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_z_020", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_z_021", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/edit"}}
+{"uuid": "mcp_z_022", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/move"}}
+{"uuid": "mcp_z_023", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_z_024", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpw"}}
+{"uuid": "mcp_z_025", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_z_026", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_z_027", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/edit"}}
+{"uuid": "mcp_z_028", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/move"}}
+{"uuid": "mcp_z_029", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_z_030", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpw"}}
+{"uuid": "mcp_z_031", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_z_032", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_z_033", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/edit"}}
+{"uuid": "mcp_z_034", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/move"}}
+{"uuid": "mcp_z_035", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_z_036", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpw"}}
+{"uuid": "mcp_z_037", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_z_038", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_z_039", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/edit"}}
+{"uuid": "mcp_z_040", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/move"}}
+{"uuid": "mcp_z_041", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_z_042", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpw"}}
+{"uuid": "mcp_z_043", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_z_044", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_z_045", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/edit"}}
+{"uuid": "mcp_z_046", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/move"}}
+{"uuid": "mcp_z_047", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_z_048", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpw"}}
+{"uuid": "mcp_z_049", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_z_050", "idx": 0, "tool": "list_directory_with_sizes", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_tr_001", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_tr_002", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_tr_003", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_tr_004", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/edit"}}
+{"uuid": "mcp_tr_005", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/move"}}
+{"uuid": "mcp_tr_006", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpw"}}
+{"uuid": "mcp_tr_007", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_tr_008", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_tr_009", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_tr_010", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/edit"}}
+{"uuid": "mcp_tr_011", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/move"}}
+{"uuid": "mcp_tr_012", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpw"}}
+{"uuid": "mcp_tr_013", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_tr_014", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_tr_015", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_tr_016", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/edit"}}
+{"uuid": "mcp_tr_017", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/move"}}
+{"uuid": "mcp_tr_018", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpw"}}
+{"uuid": "mcp_tr_019", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_tr_020", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_tr_021", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_tr_022", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/edit"}}
+{"uuid": "mcp_tr_023", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/move"}}
+{"uuid": "mcp_tr_024", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpw"}}
+{"uuid": "mcp_tr_025", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_tr_026", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_tr_027", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_tr_028", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/edit"}}
+{"uuid": "mcp_tr_029", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/move"}}
+{"uuid": "mcp_tr_030", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpw"}}
+{"uuid": "mcp_tr_031", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_tr_032", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_tr_033", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_tr_034", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/edit"}}
+{"uuid": "mcp_tr_035", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/move"}}
+{"uuid": "mcp_tr_036", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpw"}}
+{"uuid": "mcp_tr_037", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_tr_038", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_tr_039", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_tr_040", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/edit"}}
+{"uuid": "mcp_tr_041", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/move"}}
+{"uuid": "mcp_tr_042", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpw"}}
+{"uuid": "mcp_tr_043", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_tr_044", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_tr_045", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/media"}}
+{"uuid": "mcp_tr_046", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/edit"}}
+{"uuid": "mcp_tr_047", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/move"}}
+{"uuid": "mcp_tr_048", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpw"}}
+{"uuid": "mcp_tr_049", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix"}}
+{"uuid": "mcp_tr_050", "idx": 0, "tool": "directory_tree", "arguments": {"path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_001", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_acorn", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_002", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_birch", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_003", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_clover", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_004", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_dune", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_005", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_elm", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_006", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_fern", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_007", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_gale", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_008", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_heath", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_009", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_iris", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_010", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_jade", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_011", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_kestrel", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_012", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_lark", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_013", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_maple", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_014", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_north", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_015", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_opal", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_016", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_pine", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_017", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_quill", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_018", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_rowan", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_019", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_spruce", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_020", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_thyme", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_021", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_ursa", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_022", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_vetch", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_023", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_wren", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_024", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_yarrow", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_025", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_zinc", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_026", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_alto", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_027", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_brisk", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_028", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_cinder", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_029", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_drift", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_030", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_ember", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_031", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_frost", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_032", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_glade", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_033", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_harbor", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_034", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_inlet", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_035", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_jetty", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_036", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_knoll", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_037", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_ledge", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_038", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_marsh", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_039", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_niche", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_040", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_oasis", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_041", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_plaza", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_042", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_quay", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_043", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_ridge", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_044", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_shoal", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_045", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_terrace", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_046", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_upland", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_047", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_vista", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_048", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_wharf", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_049", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_yonder", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_s_050", "idx": 0, "tool": "search_files", "arguments": {"pattern": "marker_zenith", "path": "/tmp/mcpfix/read"}}
+{"uuid": "mcp_i_001", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/acorn_001.txt"}}
+{"uuid": "mcp_i_002", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/lark_012.txt"}}
+{"uuid": "mcp_i_003", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/wren_023.txt"}}
+{"uuid": "mcp_i_004", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/inlet_034.txt"}}
+{"uuid": "mcp_i_005", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/terrace_045.txt"}}
+{"uuid": "mcp_i_006", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/fern_006.txt"}}
+{"uuid": "mcp_i_007", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/quill_017.txt"}}
+{"uuid": "mcp_i_008", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/cinder_028.txt"}}
+{"uuid": "mcp_i_009", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/niche_039.txt"}}
+{"uuid": "mcp_i_010", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/zenith_050.txt"}}
+{"uuid": "mcp_i_011", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/kestrel_011.txt"}}
+{"uuid": "mcp_i_012", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/vetch_022.txt"}}
+{"uuid": "mcp_i_013", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/harbor_033.txt"}}
+{"uuid": "mcp_i_014", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/shoal_044.txt"}}
+{"uuid": "mcp_i_015", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/elm_005.txt"}}
+{"uuid": "mcp_i_016", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/pine_016.txt"}}
+{"uuid": "mcp_i_017", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/brisk_027.txt"}}
+{"uuid": "mcp_i_018", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/marsh_038.txt"}}
+{"uuid": "mcp_i_019", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/yonder_049.txt"}}
+{"uuid": "mcp_i_020", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/jade_010.txt"}}
+{"uuid": "mcp_i_021", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/ursa_021.txt"}}
+{"uuid": "mcp_i_022", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/glade_032.txt"}}
+{"uuid": "mcp_i_023", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/ridge_043.txt"}}
+{"uuid": "mcp_i_024", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/dune_004.txt"}}
+{"uuid": "mcp_i_025", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/opal_015.txt"}}
+{"uuid": "mcp_i_026", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/alto_026.txt"}}
+{"uuid": "mcp_i_027", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/ledge_037.txt"}}
+{"uuid": "mcp_i_028", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/wharf_048.txt"}}
+{"uuid": "mcp_i_029", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/iris_009.txt"}}
+{"uuid": "mcp_i_030", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/thyme_020.txt"}}
+{"uuid": "mcp_i_031", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/frost_031.txt"}}
+{"uuid": "mcp_i_032", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/quay_042.txt"}}
+{"uuid": "mcp_i_033", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/clover_003.txt"}}
+{"uuid": "mcp_i_034", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/north_014.txt"}}
+{"uuid": "mcp_i_035", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/zinc_025.txt"}}
+{"uuid": "mcp_i_036", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/knoll_036.txt"}}
+{"uuid": "mcp_i_037", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/vista_047.txt"}}
+{"uuid": "mcp_i_038", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/heath_008.txt"}}
+{"uuid": "mcp_i_039", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/spruce_019.txt"}}
+{"uuid": "mcp_i_040", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/ember_030.txt"}}
+{"uuid": "mcp_i_041", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/plaza_041.txt"}}
+{"uuid": "mcp_i_042", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/birch_002.txt"}}
+{"uuid": "mcp_i_043", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/maple_013.txt"}}
+{"uuid": "mcp_i_044", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/yarrow_024.txt"}}
+{"uuid": "mcp_i_045", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/jetty_035.txt"}}
+{"uuid": "mcp_i_046", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/upland_046.txt"}}
+{"uuid": "mcp_i_047", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/gale_007.txt"}}
+{"uuid": "mcp_i_048", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/rowan_018.txt"}}
+{"uuid": "mcp_i_049", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/drift_029.txt"}}
+{"uuid": "mcp_i_050", "idx": 0, "tool": "get_file_info", "arguments": {"path": "/tmp/mcpfix/read/oasis_040.txt"}}

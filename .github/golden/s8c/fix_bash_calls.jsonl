@@ -1,0 +1,1 @@
+{"uuid": "s8c_ba_46", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c46/a /tmp/s8c46/b; echo inA > /tmp/s8c46/a/f.txt; echo inB > /tmp/s8c46/b/f.txt; diff -r /tmp/s8c46/a /tmp/s8c46/b; echo diff-exit-equals-$?"}}

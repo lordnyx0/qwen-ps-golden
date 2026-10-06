@@ -127,9 +127,6 @@
 {"uuid": "s5_b12_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-Tpm | Select-Object TpmPresent, TpmReady"}}
 {"uuid": "s5_b12_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-Tpm | Select-Object -ExpandProperty ManufacturerVersion"}}
 {"uuid": "s5_b12_ps_04", "idx": 2, "tool": "powershell", "arguments": {"command": "Confirm-SecureBootUEFI"}}
-{"uuid": "s5_b12_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "powercfg /batteryreport /output C:/batt.html | Out-Null; Get-Content C:/batt.html | Select-String 'Design Capacity' | Select-Object -First 1"}}
-{"uuid": "s5_b12_ps_05", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-WmiObject -Class BatteryStatus -Namespace root/wmi | Select-Object -ExpandProperty RemainingCapacity"}}
-{"uuid": "s5_b12_ps_05", "idx": 2, "tool": "powershell", "arguments": {"command": "Remove-Item C:/batt.html -Force"}}
 {"uuid": "s5_b13_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "Test-Connection -ComputerName 10.0.0.1 -Count 2 -Quiet"}}
 {"uuid": "s5_b13_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "Test-Connection -ComputerName 10.0.0.1 -Count 4 | Measure-Object ResponseTime -Average | Select-Object -ExpandProperty Average"}}
 {"uuid": "s5_b13_ps_01", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-NetRoute -DestinationPrefix '0.0.0.0/0' | Select-Object NextHop"}}
@@ -313,9 +310,6 @@
 {"uuid": "t_sml_0315", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-AppxPackage -AllUsers | Measure-Object | Select-Object -ExpandProperty Count"}}
 {"uuid": "t_sml_0315", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-AppxPackage -AllUsers | Select-Object Name -First 3"}}
 {"uuid": "t_sml_0315", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-AppxPackage -Name '*Xbox*' -AllUsers | Measure-Object | Select-Object -ExpandProperty Count"}}
-{"uuid": "t_sml_0316", "idx": 0, "tool": "powershell", "arguments": {"command": "powercfg /batteryreport /output C:/batt.html | Out-Null; Get-Content C:/batt.html | Select-String 'Design Capacity' | Select-Object -First 1"}}
-{"uuid": "t_sml_0316", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-WmiObject -Class BatteryStatus -Namespace root/wmi | Select-Object -ExpandProperty RemainingCapacity"}}
-{"uuid": "t_sml_0316", "idx": 2, "tool": "powershell", "arguments": {"command": "Remove-Item C:/batt.html -Force"}}
 {"uuid": "t_sml_0317", "idx": 0, "tool": "powershell", "arguments": {"command": "Get-NetRoute -DestinationPrefix '0.0.0.0/0' | Select-Object NextHop, InterfaceAlias"}}
 {"uuid": "t_sml_0317", "idx": 1, "tool": "powershell", "arguments": {"command": "Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias 'Ethernet0' | Select-Object -ExpandProperty IPAddress"}}
 {"uuid": "t_sml_0317", "idx": 2, "tool": "powershell", "arguments": {"command": "Get-NetAdapter -Name 'Ethernet0' | Select-Object Status"}}

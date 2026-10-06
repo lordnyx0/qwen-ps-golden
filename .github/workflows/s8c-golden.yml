@@ -23,3 +23,20 @@ jobs:
           name: s8c_bash_results
           path: .github/golden/out/s8c_bash_results.jsonl
           retention-days: 30
+
+  bash-fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/golden
+          sparse-checkout-cone-mode: false
+      - name: Collect S8c fix bash goldens
+        shell: bash
+        run: python3 .github/golden/collect-bash.py --calls .github/golden/s8c/fix_bash_calls.jsonl --out .github/golden/out/s8c_fix_bash_results.jsonl
+      - uses: actions/upload-artifact@v4
+        with:
+          name: s8c_fix_bash_results
+          path: .github/golden/out/s8c_fix_bash_results.jsonl
+          retention-days: 30

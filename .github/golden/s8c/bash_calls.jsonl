@@ -1,0 +1,125 @@
+{"uuid": "s8c_sg_01", "idx": 0, "tool": "bash", "arguments": {"command": "uname -r"}}
+{"uuid": "s8c_sg_02", "idx": 0, "tool": "bash", "arguments": {"command": "uname -m"}}
+{"uuid": "s8c_sg_03", "idx": 0, "tool": "bash", "arguments": {"command": "whoami"}}
+{"uuid": "s8c_sg_04", "idx": 0, "tool": "bash", "arguments": {"command": "hostname"}}
+{"uuid": "s8c_sg_05", "idx": 0, "tool": "bash", "arguments": {"command": "nproc"}}
+{"uuid": "s8c_sg_06", "idx": 0, "tool": "bash", "arguments": {"command": "python3 --version"}}
+{"uuid": "s8c_sg_07", "idx": 0, "tool": "bash", "arguments": {"command": "bash --version | head -n 1"}}
+{"uuid": "s8c_sg_08", "idx": 0, "tool": "bash", "arguments": {"command": "which python3"}}
+{"uuid": "s8c_sg_09", "idx": 0, "tool": "bash", "arguments": {"command": "head -n 2 /proc/meminfo"}}
+{"uuid": "s8c_sg_10", "idx": 0, "tool": "bash", "arguments": {"command": "cat /proc/cpuinfo | grep -c processor"}}
+{"uuid": "s8c_sg_11", "idx": 0, "tool": "bash", "arguments": {"command": "ls /usr/bin | wc -l"}}
+{"uuid": "s8c_sg_12", "idx": 0, "tool": "bash", "arguments": {"command": "ls /etc | wc -l"}}
+{"uuid": "s8c_sg_13", "idx": 0, "tool": "bash", "arguments": {"command": "du -sh /etc"}}
+{"uuid": "s8c_sg_14", "idx": 0, "tool": "bash", "arguments": {"command": "stat -c %y /etc/hosts"}}
+{"uuid": "s8c_sg_15", "idx": 0, "tool": "bash", "arguments": {"command": "df -h /tmp | tail -n 1"}}
+{"uuid": "s8c_sg_16", "idx": 0, "tool": "bash", "arguments": {"command": "date +%F"}}
+{"uuid": "s8c_sg_17", "idx": 0, "tool": "bash", "arguments": {"command": "echo $HOME"}}
+{"uuid": "s8c_sg_18", "idx": 0, "tool": "bash", "arguments": {"command": "echo $SHELL"}}
+{"uuid": "s8c_sg_19", "idx": 0, "tool": "bash", "arguments": {"command": "pwd"}}
+{"uuid": "s8c_sg_20", "idx": 0, "tool": "bash", "arguments": {"command": "uptime"}}
+{"uuid": "s8c_sg_21", "idx": 0, "tool": "bash", "arguments": {"command": "groups"}}
+{"uuid": "s8c_sg_22", "idx": 0, "tool": "bash", "arguments": {"command": "df -i /tmp | tail -n 1"}}
+{"uuid": "s8c_sg_23", "idx": 0, "tool": "bash", "arguments": {"command": "ls /opt 2>/dev/null | wc -l"}}
+{"uuid": "s8c_sg_24", "idx": 0, "tool": "bash", "arguments": {"command": "cat /etc/shells"}}
+{"uuid": "s8c_sg_25", "idx": 0, "tool": "bash", "arguments": {"command": "test ! -f /tmp/s8c-nope-xyz && echo missing-ok"}}
+{"uuid": "s8c_sg_26", "idx": 0, "tool": "bash", "arguments": {"command": "[ -d /tmp ] && echo bracket-ok"}}
+{"uuid": "s8c_sg_27", "idx": 0, "tool": "bash", "arguments": {"command": "od -An -c /etc/hostname | head -n 2"}}
+{"uuid": "s8c_sg_28", "idx": 0, "tool": "bash", "arguments": {"command": "ls -la / | head -n 8"}}
+{"uuid": "s8c_sg_29", "idx": 0, "tool": "bash", "arguments": {"command": "env | grep -c PATH"}}
+{"uuid": "s8c_ba_01", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c01; ls -ld /tmp/s8c01"}}
+{"uuid": "s8c_ba_01", "idx": 1, "tool": "bash", "arguments": {"command": "test -d /tmp/s8c01 && echo dir-ok"}}
+{"uuid": "s8c_ba_02", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c02; touch /tmp/s8c02/marker; ls -l /tmp/s8c02/marker"}}
+{"uuid": "s8c_ba_02", "idx": 1, "tool": "bash", "arguments": {"command": "test -f /tmp/s8c02/marker && echo file-ok"}}
+{"uuid": "s8c_ba_03", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c03/a; echo dataABC > /tmp/s8c03/a/f.txt; tar -cf /tmp/s8c03/b.tar -C /tmp/s8c03 a; tar -tf /tmp/s8c03/b.tar"}}
+{"uuid": "s8c_ba_03", "idx": 1, "tool": "bash", "arguments": {"command": "ls -l /tmp/s8c03/b.tar"}}
+{"uuid": "s8c_ba_04", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c04; echo payloadXYZ > /tmp/s8c04/g.txt; gzip -kf /tmp/s8c04/g.txt; ls -l /tmp/s8c04"}}
+{"uuid": "s8c_ba_04", "idx": 1, "tool": "bash", "arguments": {"command": "gzip -dc /tmp/s8c04/g.txt.gz"}}
+{"uuid": "s8c_ba_05", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c05; printf 'b\\na\\nb\\n' > /tmp/s8c05/u.txt; sort /tmp/s8c05/u.txt | uniq -c"}}
+{"uuid": "s8c_ba_05", "idx": 1, "tool": "bash", "arguments": {"command": "wc -l /tmp/s8c05/u.txt"}}
+{"uuid": "s8c_ba_06", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c06; echo k1=v1 > /tmp/s8c06/kv.txt; cut -d= -f1 /tmp/s8c06/kv.txt"}}
+{"uuid": "s8c_ba_06", "idx": 1, "tool": "bash", "arguments": {"command": "cut -d= -f2 /tmp/s8c06/kv.txt"}}
+{"uuid": "s8c_ba_07", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c07; echo abcdef > /tmp/s8c07/lower.txt; tr a-z A-Z < /tmp/s8c07/lower.txt"}}
+{"uuid": "s8c_ba_07", "idx": 1, "tool": "bash", "arguments": {"command": "cat /tmp/s8c07/lower.txt"}}
+{"uuid": "s8c_ba_08", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c08; seq 1 10 > /tmp/s8c08/nums.txt; head -n 3 /tmp/s8c08/nums.txt"}}
+{"uuid": "s8c_ba_08", "idx": 1, "tool": "bash", "arguments": {"command": "tail -n 2 /tmp/s8c08/nums.txt"}}
+{"uuid": "s8c_ba_09", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c09; echo oneline > /tmp/s8c09/1.txt; wc -l -w -c /tmp/s8c09/1.txt"}}
+{"uuid": "s8c_ba_09", "idx": 1, "tool": "bash", "arguments": {"command": "cat /tmp/s8c09/1.txt"}}
+{"uuid": "s8c_ba_10", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c10; touch /tmp/s8c10/oldname; mv /tmp/s8c10/oldname /tmp/s8c10/newname; ls /tmp/s8c10"}}
+{"uuid": "s8c_ba_10", "idx": 1, "tool": "bash", "arguments": {"command": "test -f /tmp/s8c10/newname && echo moved-ok"}}
+{"uuid": "s8c_ba_11", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c11/src/sub; touch /tmp/s8c11/src/sub/deep; cp -r /tmp/s8c11/src /tmp/s8c11/dst; find /tmp/s8c11/dst"}}
+{"uuid": "s8c_ba_11", "idx": 1, "tool": "bash", "arguments": {"command": "ls -R /tmp/s8c11/dst"}}
+{"uuid": "s8c_ba_12", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c12; printf 'aa\\nbb\\naa\\n' > /tmp/s8c12/r.txt; grep -n aa /tmp/s8c12/r.txt"}}
+{"uuid": "s8c_ba_12", "idx": 1, "tool": "bash", "arguments": {"command": "grep -v aa /tmp/s8c12/r.txt"}}
+{"uuid": "s8c_ba_13", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c13; echo checkABC > /tmp/s8c13/m.txt; md5sum /tmp/s8c13/m.txt"}}
+{"uuid": "s8c_ba_13", "idx": 1, "tool": "bash", "arguments": {"command": "stat -c %s /tmp/s8c13/m.txt"}}
+{"uuid": "s8c_ba_14", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c14; basename /tmp/s8c14/a/b.txt"}}
+{"uuid": "s8c_ba_14", "idx": 1, "tool": "bash", "arguments": {"command": "dirname /tmp/s8c14/a/b.txt"}}
+{"uuid": "s8c_ba_15", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c15; date +%F > /tmp/s8c15/today.txt; cat /tmp/s8c15/today.txt"}}
+{"uuid": "s8c_ba_15", "idx": 1, "tool": "bash", "arguments": {"command": "wc -c /tmp/s8c15/today.txt"}}
+{"uuid": "s8c_ba_16", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c16; echo first > /tmp/s8c16/t.log; echo second | tee -a /tmp/s8c16/t.log; cat /tmp/s8c16/t.log"}}
+{"uuid": "s8c_ba_16", "idx": 1, "tool": "bash", "arguments": {"command": "wc -l /tmp/s8c16/t.log"}}
+{"uuid": "s8c_ba_17", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c17; seq 1 20 > /tmp/s8c17/big.txt; split -l 5 /tmp/s8c17/big.txt /tmp/s8c17/part_; ls /tmp/s8c17"}}
+{"uuid": "s8c_ba_17", "idx": 1, "tool": "bash", "arguments": {"command": "cat /tmp/s8c17/part_aa"}}
+{"uuid": "s8c_ba_18", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c18; echo A > /tmp/s8c18/c1.txt; echo 1 > /tmp/s8c18/c2.txt; paste -d: /tmp/s8c18/c1.txt /tmp/s8c18/c2.txt"}}
+{"uuid": "s8c_ba_18", "idx": 1, "tool": "bash", "arguments": {"command": "cat /tmp/s8c18/c1.txt"}}
+{"uuid": "s8c_ba_19", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c19; printf 'x\\ny\\n' > /tmp/s8c19/f.txt; nl /tmp/s8c19/f.txt"}}
+{"uuid": "s8c_ba_19", "idx": 1, "tool": "bash", "arguments": {"command": "tac /tmp/s8c19/f.txt"}}
+{"uuid": "s8c_ba_20", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c20/a/b/c; find /tmp/s8c20 -type d"}}
+{"uuid": "s8c_ba_20", "idx": 1, "tool": "bash", "arguments": {"command": "ls /tmp/s8c20/a/b"}}
+{"uuid": "s8c_ba_21", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c21; touch /tmp/s8c21/p /tmp/s8c21/q /tmp/s8c21/r; ls /tmp/s8c21 | wc -l"}}
+{"uuid": "s8c_ba_21", "idx": 1, "tool": "bash", "arguments": {"command": "ls /tmp/s8c21"}}
+{"uuid": "s8c_ba_22", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c22; echo sameA > /tmp/s8c22/a.txt; echo sameA > /tmp/s8c22/b.txt; cmp /tmp/s8c22/a.txt /tmp/s8c22/b.txt && echo files-same"}}
+{"uuid": "s8c_ba_22", "idx": 1, "tool": "bash", "arguments": {"command": "diff /tmp/s8c22/a.txt /tmp/s8c22/b.txt && echo diff-clean"}}
+{"uuid": "s8c_ba_23", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c23; printf 'a 1\\nb 2\\n' > /tmp/s8c23/j1.txt; printf 'a X\\nb Y\\n' > /tmp/s8c23/j2.txt; join /tmp/s8c23/j1.txt /tmp/s8c23/j2.txt"}}
+{"uuid": "s8c_ba_23", "idx": 1, "tool": "bash", "arguments": {"command": "wc -l /tmp/s8c23/j1.txt"}}
+{"uuid": "s8c_ba_24", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c24; echo hello-xargs | xargs echo"}}
+{"uuid": "s8c_ba_24", "idx": 1, "tool": "bash", "arguments": {"command": "echo /tmp/s8c24 | xargs basename"}}
+{"uuid": "s8c_ba_25", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c25; echo data12345 > /tmp/s8c25/f.txt; du -sh /tmp/s8c25"}}
+{"uuid": "s8c_ba_25", "idx": 1, "tool": "bash", "arguments": {"command": "du -sb /tmp/s8c25/f.txt"}}
+{"uuid": "s8c_ba_26", "idx": 0, "tool": "bash", "arguments": {"command": "df -h /tmp | awk '{print $4}'"}}
+{"uuid": "s8c_ba_26", "idx": 1, "tool": "bash", "arguments": {"command": "df -h /tmp | tail -n 1"}}
+{"uuid": "s8c_ba_27", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c27; touch /tmp/s8c27/oldf /tmp/s8c27/newf; ls -t /tmp/s8c27 | head -n 2"}}
+{"uuid": "s8c_ba_27", "idx": 1, "tool": "bash", "arguments": {"command": "ls /tmp/s8c27"}}
+{"uuid": "s8c_ba_28", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c28; echo permdata > /tmp/s8c28/f.txt; stat -c %a /tmp/s8c28/f.txt"}}
+{"uuid": "s8c_ba_28", "idx": 1, "tool": "bash", "arguments": {"command": "stat -c %U /tmp/s8c28/f.txt"}}
+{"uuid": "s8c_ba_29", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c29; echo data > /tmp/s8c29/f.txt; test -s /tmp/s8c29/f.txt && echo has-data"}}
+{"uuid": "s8c_ba_29", "idx": 1, "tool": "bash", "arguments": {"command": "cat /tmp/s8c29/f.txt"}}
+{"uuid": "s8c_ba_30", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c30; ln -sf /etc/hostname /tmp/s8c30/hl; ls -l /tmp/s8c30/hl"}}
+{"uuid": "s8c_ba_30", "idx": 1, "tool": "bash", "arguments": {"command": "readlink /tmp/s8c30/hl"}}
+{"uuid": "s8c_ba_31", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c31; ln -sf /etc/hostname /tmp/s8c31/hl2; cat /tmp/s8c31/hl2"}}
+{"uuid": "s8c_ba_31", "idx": 1, "tool": "bash", "arguments": {"command": "test -L /tmp/s8c31/hl2 && echo link-ok"}}
+{"uuid": "s8c_ba_32", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c32; printf 'red\\ngreen\\nblue\\n' > /tmp/s8c32/c.txt; grep -c e /tmp/s8c32/c.txt"}}
+{"uuid": "s8c_ba_32", "idx": 1, "tool": "bash", "arguments": {"command": "grep green /tmp/s8c32/c.txt"}}
+{"uuid": "s8c_ba_33", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c33/sub1 /tmp/s8c33/sub2; touch /tmp/s8c33/sub1/a /tmp/s8c33/sub2/b; find /tmp/s8c33 -type f"}}
+{"uuid": "s8c_ba_33", "idx": 1, "tool": "bash", "arguments": {"command": "find /tmp/s8c33 -type d"}}
+{"uuid": "s8c_ba_34", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c34; echo seqA > /tmp/s8c34/s.txt; seq 3 >> /tmp/s8c34/s.txt; cat /tmp/s8c34/s.txt"}}
+{"uuid": "s8c_ba_34", "idx": 1, "tool": "bash", "arguments": {"command": "tail -n 2 /tmp/s8c34/s.txt"}}
+{"uuid": "s8c_ba_35", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c35/empty; ls -A /tmp/s8c35/empty | wc -l"}}
+{"uuid": "s8c_ba_35", "idx": 1, "tool": "bash", "arguments": {"command": "test -z \"$(ls -A /tmp/s8c35/empty)\" && echo empty-ok"}}
+{"uuid": "s8c_ba_36", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c36; touch -d '2020-01-02 03:04:05' /tmp/s8c36/old.txt; stat -c %y /tmp/s8c36/old.txt"}}
+{"uuid": "s8c_ba_36", "idx": 1, "tool": "bash", "arguments": {"command": "ls -l --time-style=long-iso /tmp/s8c36/old.txt"}}
+{"uuid": "s8c_ba_37", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c37; echo mixedCASE > /tmp/s8c37/c.txt; tr A-Z a-z < /tmp/s8c37/c.txt"}}
+{"uuid": "s8c_ba_37", "idx": 1, "tool": "bash", "arguments": {"command": "grep -i mixedcase /tmp/s8c37/c.txt"}}
+{"uuid": "s8c_ba_38", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c38; seq 5 > /tmp/s8c38/n.txt; paste -sd, /tmp/s8c38/n.txt"}}
+{"uuid": "s8c_ba_38", "idx": 1, "tool": "bash", "arguments": {"command": "wc -l /tmp/s8c38/n.txt"}}
+{"uuid": "s8c_ba_39", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c39; printf 'z\\nm\\na\\n' > /tmp/s8c39/s.txt; sort /tmp/s8c39/s.txt"}}
+{"uuid": "s8c_ba_39", "idx": 1, "tool": "bash", "arguments": {"command": "sort -r /tmp/s8c39/s.txt | head -n 1"}}
+{"uuid": "s8c_ba_40", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c40; echo spaced words here > /tmp/s8c40/w.txt; wc -w /tmp/s8c40/w.txt"}}
+{"uuid": "s8c_ba_40", "idx": 1, "tool": "bash", "arguments": {"command": "cut -d' ' -f2 /tmp/s8c40/w.txt"}}
+{"uuid": "s8c_ba_41", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c41/one; echo deepdata > /tmp/s8c41/one/deep.txt; ls -R /tmp/s8c41"}}
+{"uuid": "s8c_ba_41", "idx": 1, "tool": "bash", "arguments": {"command": "cat /tmp/s8c41/one/deep.txt"}}
+{"uuid": "s8c_ba_42", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c42; cp /etc/hosts /tmp/s8c42/h1; head -n 2 /tmp/s8c42/h1"}}
+{"uuid": "s8c_ba_42", "idx": 1, "tool": "bash", "arguments": {"command": "tail -n 2 /tmp/s8c42/h1"}}
+{"uuid": "s8c_ba_43", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c43; printf '1\\n2\\n3\\n4\\n' > /tmp/s8c43/q.txt; sed -n '2,3p' /tmp/s8c43/q.txt"}}
+{"uuid": "s8c_ba_43", "idx": 1, "tool": "bash", "arguments": {"command": "sed -n '$p' /tmp/s8c43/q.txt"}}
+{"uuid": "s8c_ba_44", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c44; echo keepme > /tmp/s8c44/k.txt; cp -f /tmp/s8c44/k.txt /tmp/s8c44/k2.txt; ls /tmp/s8c44"}}
+{"uuid": "s8c_ba_44", "idx": 1, "tool": "bash", "arguments": {"command": "diff /tmp/s8c44/k.txt /tmp/s8c44/k2.txt && echo cp-ok"}}
+{"uuid": "s8c_ba_45", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c45; echo v1 > /tmp/s8c45/app.log; echo v2 >> /tmp/s8c45/app.log; echo v3 >> /tmp/s8c45/app.log; grep -c v /tmp/s8c45/app.log"}}
+{"uuid": "s8c_ba_45", "idx": 1, "tool": "bash", "arguments": {"command": "tail -n 1 /tmp/s8c45/app.log"}}
+{"uuid": "s8c_ba_46", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c46/a /tmp/s8c46/b; echo inA > /tmp/s8c46/a/f.txt; echo inB > /tmp/s8c46/b/f.txt; diff -r /tmp/s8c46/a /tmp/s8c46/b"}}
+{"uuid": "s8c_ba_46", "idx": 1, "tool": "bash", "arguments": {"command": "ls /tmp/s8c46/a /tmp/s8c46/b"}}
+{"uuid": "s8c_ba_47", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c47; echo alpha > /tmp/s8c47/a.txt; echo beta > /tmp/s8c47/b.txt; cat /tmp/s8c47/*.txt"}}
+{"uuid": "s8c_ba_47", "idx": 1, "tool": "bash", "arguments": {"command": "ls /tmp/s8c47"}}
+{"uuid": "s8c_ba_48", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8c48; touch /tmp/s8c48/visible; ls -la /tmp/s8c48 | head -n 5"}}
+{"uuid": "s8c_ba_48", "idx": 1, "tool": "bash", "arguments": {"command": "ls /tmp/s8c48/visible && echo seen-ok"}}

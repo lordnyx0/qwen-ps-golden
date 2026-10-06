@@ -1,0 +1,34 @@
+{"uuid": "s8b_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "new-item -path $env:TEMP\\s8b01 -itemtype directory"}}
+{"uuid": "s8b_ps_01", "idx": 1, "tool": "powershell", "arguments": {"command": "get-item -path $env:TEMP\\s8b01 | select-object -expandproperty name"}}
+{"uuid": "s8b_ps_02", "idx": 0, "tool": "powershell", "arguments": {"command": "set-content -path $env:TEMP\\s8b02.txt -value \"s8b alpha\"; get-content -path $env:TEMP\\s8b02.txt"}}
+{"uuid": "s8b_ps_02", "idx": 1, "tool": "powershell", "arguments": {"command": "get-content -path $env:TEMP\\s8b02.txt -totalcount 1"}}
+{"uuid": "s8b_ps_03", "idx": 0, "tool": "powershell", "arguments": {"command": "add-content -path $env:TEMP\\s8b03.log -value \"line one\"; get-content -path $env:TEMP\\s8b03.log"}}
+{"uuid": "s8b_ps_03", "idx": 1, "tool": "powershell", "arguments": {"command": "add-content -path $env:TEMP\\s8b03.log -value \"line two\"; get-content -path $env:TEMP\\s8b03.log | measure-object -line | select-object -expandproperty lines"}}
+{"uuid": "s8b_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "set-content -path $env:TEMP\\s8b04.csv -value \"id,name`n1,alpha\"; get-content -path $env:TEMP\\s8b04.csv -totalcount 2"}}
+{"uuid": "s8b_ps_04", "idx": 1, "tool": "powershell", "arguments": {"command": "get-content -path $env:TEMP\\s8b04.csv | measure-object -line | select-object -expandproperty lines"}}
+{"uuid": "s8b_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "new-item -path $env:TEMP\\s8b05 -itemtype directory -force; copy-item -path c:/windows/system32/drivers/etc/hosts -destination $env:TEMP\\s8b05\\hosts.bak"}}
+{"uuid": "s8b_ps_05", "idx": 1, "tool": "powershell", "arguments": {"command": "get-item -path $env:TEMP\\s8b05\\hosts.bak | select-object -expandproperty length"}}
+{"uuid": "s8b_ps_06", "idx": 0, "tool": "powershell", "arguments": {"command": "new-item -path $env:TEMP\\s8b06 -itemtype directory -force; get-item -path $env:TEMP\\s8b06"}}
+{"uuid": "s8b_ps_06", "idx": 1, "tool": "powershell", "arguments": {"command": "new-item -path $env:TEMP\\s8b06\\inner.txt -itemtype file -force; get-childitem -path $env:TEMP\\s8b06"}}
+{"uuid": "s8b_ps_07", "idx": 0, "tool": "powershell", "arguments": {"command": "new-item -path $env:TEMP\\s8b07 -itemtype directory"}}
+{"uuid": "s8b_ps_07", "idx": 1, "tool": "powershell", "arguments": {"command": "test-path -path $env:TEMP\\s8b07"}}
+{"uuid": "s8b_ps_08", "idx": 0, "tool": "powershell", "arguments": {"command": "new-item -path $env:TEMP\\s8b08 -itemtype directory -force; ping 127.0.0.1 -n 1 | out-file $env:TEMP\\s8b08\\ping.txt; get-item -path $env:TEMP\\s8b08\\ping.txt"}}
+{"uuid": "s8b_ps_08", "idx": 1, "tool": "powershell", "arguments": {"command": "get-content -path $env:TEMP\\s8b08\\ping.txt | measure-object -line | select-object -expandproperty lines"}}
+{"uuid": "s8b_ps_09", "idx": 0, "tool": "powershell", "arguments": {"command": "new-item -path $env:TEMP\\s8b09 -itemtype directory -force; copy-item -path c:/windows/system32/drivers/etc/hosts -destination $env:TEMP\\s8b09\\h1"}}
+{"uuid": "s8b_ps_09", "idx": 1, "tool": "powershell", "arguments": {"command": "copy-item -path $env:TEMP\\s8b09\\h1 -destination $env:TEMP\\s8b09\\h2; get-item -path $env:TEMP\\s8b09\\h2 | select-object -expandproperty length"}}
+{"uuid": "s8b_ps_10", "idx": 0, "tool": "powershell", "arguments": {"command": "new-item -path $env:TEMP\\s8b10 -itemtype directory -force; \"s8b build ok\" > $env:TEMP\\s8b10\\t.txt; get-content -path $env:TEMP\\s8b10\\t.txt"}}
+{"uuid": "s8b_ps_10", "idx": 1, "tool": "powershell", "arguments": {"command": "get-content -path $env:TEMP\\s8b10\\t.txt | measure-object -character | select-object -expandproperty characters"}}
+{"uuid": "s8b_ps_11", "idx": 0, "tool": "powershell", "arguments": {"command": "new-item -path $env:TEMP\\s8b11A -itemtype directory -force; get-item -path $env:TEMP\\s8b11A"}}
+{"uuid": "s8b_ps_11", "idx": 1, "tool": "powershell", "arguments": {"command": "new-item -path $env:TEMP\\s8b11B -itemtype directory -force; get-childitem -path $env:TEMP | where-object {$_.name -like 's8b11*'} | select-object -expandproperty name"}}
+{"uuid": "s8b_ps_12", "idx": 0, "tool": "powershell", "arguments": {"command": "set-content -path $env:TEMP\\s8b12.log -value \"v1\"; get-content -path $env:TEMP\\s8b12.log"}}
+{"uuid": "s8b_ps_12", "idx": 1, "tool": "powershell", "arguments": {"command": "add-content -path $env:TEMP\\s8b12.log -value \"v2\"; get-content -path $env:TEMP\\s8b12.log"}}
+{"uuid": "s8b_ps_13", "idx": 0, "tool": "powershell", "arguments": {"command": "set-content -path $env:TEMP\\s8b13.json -value '{\"build\":114}'; get-content -path $env:TEMP\\s8b13.json -raw"}}
+{"uuid": "s8b_ps_13", "idx": 1, "tool": "powershell", "arguments": {"command": "get-item -path $env:TEMP\\s8b13.json | select-object -expandproperty length"}}
+{"uuid": "s8b_ps_14", "idx": 0, "tool": "powershell", "arguments": {"command": "new-item -path $env:TEMP\\s8b14 -itemtype directory -force; copy-item -path c:/windows/system32/drivers/etc/hosts -destination $env:TEMP\\s8b14\\hosts.bak"}}
+{"uuid": "s8b_ps_14", "idx": 1, "tool": "powershell", "arguments": {"command": "get-content -path $env:TEMP\\s8b14\\hosts.bak | measure-object -line | select-object -expandproperty lines"}}
+{"uuid": "s8b_ps_15", "idx": 0, "tool": "powershell", "arguments": {"command": "new-item -path $env:TEMP\\s8b15 -itemtype directory"}}
+{"uuid": "s8b_ps_15", "idx": 1, "tool": "powershell", "arguments": {"command": "new-item -path $env:TEMP\\s8b15\\a.txt -itemtype file -force; get-childitem -path $env:TEMP\\s8b15"}}
+{"uuid": "s8b_ps_15", "idx": 2, "tool": "powershell", "arguments": {"command": "test-path -path $env:TEMP\\s8b15\\a.txt"}}
+{"uuid": "s8b_ps_16", "idx": 0, "tool": "powershell", "arguments": {"command": "set-content -path $env:TEMP\\s8b16.txt -value \"one\"; get-content -path $env:TEMP\\s8b16.txt"}}
+{"uuid": "s8b_ps_16", "idx": 1, "tool": "powershell", "arguments": {"command": "add-content -path $env:TEMP\\s8b16.txt -value \"two\"; get-content -path $env:TEMP\\s8b16.txt"}}
+{"uuid": "s8b_ps_16", "idx": 2, "tool": "powershell", "arguments": {"command": "get-content -path $env:TEMP\\s8b16.txt | measure-object -line | select-object -expandproperty lines"}}

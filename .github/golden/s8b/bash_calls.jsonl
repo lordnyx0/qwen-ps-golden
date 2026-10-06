@@ -1,0 +1,16 @@
+{"uuid": "s8b_ba_01", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8b01; ls -ld /tmp/s8b01"}}
+{"uuid": "s8b_ba_01", "idx": 1, "tool": "bash", "arguments": {"command": "test -d /tmp/s8b01 && echo dir-ok"}}
+{"uuid": "s8b_ba_02", "idx": 0, "tool": "bash", "arguments": {"command": "touch /tmp/s8b02/marker; ls -l /tmp/s8b02/marker"}}
+{"uuid": "s8b_ba_02", "idx": 1, "tool": "bash", "arguments": {"command": "test -f /tmp/s8b02/marker && echo file-ok"}}
+{"uuid": "s8b_ba_03", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8b03; cp /etc/hostname /tmp/s8b03/hostname.bak; cat /tmp/s8b03/hostname.bak"}}
+{"uuid": "s8b_ba_03", "idx": 1, "tool": "bash", "arguments": {"command": "stat -c %s /tmp/s8b03/hostname.bak"}}
+{"uuid": "s8b_ba_04", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8b04; printf 's8b ' > /tmp/s8b04/manifest.txt; cat /tmp/s8b04/manifest.txt"}}
+{"uuid": "s8b_ba_04", "idx": 1, "tool": "bash", "arguments": {"command": "stat -c %s /tmp/s8b04/manifest.txt"}}
+{"uuid": "s8b_ba_05", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8b05; echo start > /tmp/s8b05/run.log; echo step2 >> /tmp/s8b05/run.log; cat /tmp/s8b05/run.log"}}
+{"uuid": "s8b_ba_05", "idx": 1, "tool": "bash", "arguments": {"command": "grep -c step2 /tmp/s8b05/run.log"}}
+{"uuid": "s8b_ba_06", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8b06/a/b/c; find /tmp/s8b06 -type d"}}
+{"uuid": "s8b_ba_06", "idx": 1, "tool": "bash", "arguments": {"command": "ls /tmp/s8b06/a/b"}}
+{"uuid": "s8b_ba_07", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8b07; touch /tmp/s8b07/a /tmp/s8b07/b /tmp/s8b07/c; ls /tmp/s8b07 | wc -l"}}
+{"uuid": "s8b_ba_07", "idx": 1, "tool": "bash", "arguments": {"command": "ls /tmp/s8b07"}}
+{"uuid": "s8b_ba_08", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8b09; ln -sf /etc/hostname /tmp/s8b09/hostlink; ls -l /tmp/s8b09/hostlink"}}
+{"uuid": "s8b_ba_08", "idx": 1, "tool": "bash", "arguments": {"command": "cat /tmp/s8b09/hostlink"}}

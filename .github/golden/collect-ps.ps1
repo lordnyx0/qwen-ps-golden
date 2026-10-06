@@ -5,7 +5,7 @@
 # Seguranca: blocklist antes de executar + processo filho com timeout 20s + truncate 32KB.
 param(
   [string]$Calls = (Join-Path $PSScriptRoot "ws155_calls.jsonl"),
-  [string]$Out = (Join-Path $PSScriptRoot "out" "ps_results.jsonl")
+  [string]$Out = (Join-Path (Join-Path $PSScriptRoot "out") "ps_results.jsonl")
 )
 
 $TIMEOUT_S = 20

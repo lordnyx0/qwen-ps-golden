@@ -21,16 +21,16 @@
 {"uuid": "g6_ps_mu_02", "idx": 0, "tool": "powershell", "arguments": {"command": "New-Item -Path $env:TEMP/g6ps02/data.txt -ItemType File -Force"}}
 {"uuid": "g6_ps_mu_03", "idx": 0, "tool": "powershell", "arguments": {"command": "Set-Content -Path $env:TEMP/g6ps03/notes.txt -Value 'run 7 ok'"}}
 {"uuid": "g6_ps_mu_04", "idx": 0, "tool": "powershell", "arguments": {"command": "Add-Content -Path $env:TEMP/g6ps04/app.log -Value '2026-01-01 started'"}}
-{"uuid": "g6_ps_mu_05", "idx": 0, "tool": "powershell", "arguments": {"command": "Copy-Item -Path C:/Windows/System32/drivers/etc/hosts -Destination $env:TEMP/g6ps05/hosts.bak"}}
+{"uuid": "g6_ps_mu_05", "idx": 0, "tool": "powershell", "arguments": {"command": "New-Item -Path $env:TEMP/g6ps05 -ItemType Directory -Force; Copy-Item -Path C:/Windows/System32/drivers/etc/hosts -Destination $env:TEMP/g6ps05/hosts.bak"}}
 {"uuid": "g6_ps_mu_06", "idx": 0, "tool": "powershell", "arguments": {"command": "New-Item -Path HKCU:/Software/g6ps06"}}
 {"uuid": "g6_ps_mu_07", "idx": 0, "tool": "powershell", "arguments": {"command": "New-ItemProperty -Path HKCU:/Software/g6ps07 -Name Build -Value '114' -Force"}}
 {"uuid": "g6_ps_mu_08", "idx": 0, "tool": "powershell", "arguments": {"command": "New-ItemProperty -Path HKCU:/Software/g6ps08 -Name Enabled -PropertyType DWord -Value 1 -Force"}}
 {"uuid": "g6_ps_mu_09", "idx": 0, "tool": "powershell", "arguments": {"command": "ping 127.0.0.1 -n 1 | Out-File $env:TEMP/g6ps09/ping.txt"}}
 {"uuid": "g6_ps_mu_10", "idx": 0, "tool": "powershell", "arguments": {"command": "New-Item -Path $env:TEMP/g6ps10/logs/archive -ItemType Directory -Force"}}
-{"uuid": "g6_ps_mu_11", "idx": 0, "tool": "powershell", "arguments": {"command": "'build ok' | Tee-Object -FilePath $env:TEMP/g6ps11/t.txt"}}
-{"uuid": "g6_ps_mu_12", "idx": 0, "tool": "powershell", "arguments": {"command": "Copy-Item -Path C:/Windows/System32/drivers/etc/hosts -Destination $env:TEMP/g6ps12/hosts.copy"}}
+{"uuid": "g6_ps_mu_11", "idx": 0, "tool": "powershell", "arguments": {"command": "'build ok' > $env:TEMP/g6ps11/t.txt"}}
+{"uuid": "g6_ps_mu_12", "idx": 0, "tool": "powershell", "arguments": {"command": "New-Item -Path $env:TEMP/g6ps12 -ItemType Directory -Force; Copy-Item -Path C:/Windows/System32/drivers/etc/hosts -Destination $env:TEMP/g6ps12/hosts.copy"}}
 {"uuid": "g6_ps_mu_13", "idx": 0, "tool": "powershell", "arguments": {"command": "Set-Content -Path $env:TEMP/g6ps13/r.csv -Value \"id,name`n1,alpha\""}}
 {"uuid": "g6_ps_mu_14", "idx": 0, "tool": "powershell", "arguments": {"command": "New-Item -Path $env:TEMP/g6ps14/n.txt -ItemType File -Force; Add-Content -Path $env:TEMP/g6ps14/n.txt -Value 'second'"}}
 {"uuid": "g6_ps_mu_15", "idx": 0, "tool": "powershell", "arguments": {"command": "New-Item -Path $env:TEMP/g6ps15 -ItemType Directory -Force; Set-Content -Path $env:TEMP/g6ps15/readme.txt -Value 'g6'"}}
-{"uuid": "g6_ps_mu_16", "idx": 0, "tool": "powershell", "arguments": {"command": "Copy-Item -Path C:/Windows/System32/drivers/etc/hosts -Destination $env:TEMP/g6ps16/h; Add-Content -Path $env:TEMP/g6ps16/h -Value '# g6'"}}
+{"uuid": "g6_ps_mu_16", "idx": 0, "tool": "powershell", "arguments": {"command": "New-Item -Path $env:TEMP/g6ps16 -ItemType Directory -Force; Copy-Item -Path C:/Windows/System32/drivers/etc/hosts -Destination $env:TEMP/g6ps16/h; Add-Content -Path $env:TEMP/g6ps16/h -Value '# g6'"}}
 {"uuid": "g6_ps_mu_17", "idx": 0, "tool": "powershell", "arguments": {"command": "New-Item -Path HKCU:/Software/g6ps17 -Force; New-ItemProperty -Path HKCU:/Software/g6ps17 -Name Build -Value '1' -Force"}}

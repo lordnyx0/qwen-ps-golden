@@ -204,7 +204,7 @@ def collect(call):
                 lines = lines[:max(0, int(head))]
             elif tail is not None:
                 lines = lines[max(0, len(lines) - int(tail)):]
-            return True, 0, "\n".join(lines) + ("\n" if lines else ""), ""
+            return True, 0, "\n".join(lines) + ("\n" if lines else ""), "", refused
         except Exception as e:  # noqa: BLE001
             return False, 1, "", f"{type(e).__name__}: {e}", ""
     if tool == "read_multiple_files":
@@ -219,7 +219,7 @@ def collect(call):
             for p in paths:
                 with open(_resolve(p), "r", encoding="utf-8") as f:
                     chunks.append(f"--- {p} ---\n" + f.read())
-            return True, 0, "".join(chunks), ""
+            return True, 0, "".join(chunks), "", refused
         except Exception as e:  # noqa: BLE001
             return False, 1, "", f"{type(e).__name__}: {e}", ""
     if tool == "read_media_file":
@@ -236,7 +236,7 @@ def collect(call):
                 kind = "SVG"
             else:
                 kind = "BIN"
-            return True, 0, f"{kind} {len(data)} bytes: {p}", ""
+            return True, 0, f"{kind} {len(data)} bytes: {p}", "", refused
         except Exception as e:  # noqa: BLE001
             return False, 1, "", f"{type(e).__name__}: {e}", ""
     if tool == "list_directory_with_sizes":
@@ -249,7 +249,7 @@ def collect(call):
             for name in sorted(os.listdir(full)):
                 fp = os.path.join(full, name)
                 out.append(f"{name}: {os.path.getsize(fp)} bytes")
-            return True, 0, "\n".join(out) + ("\n" if out else ""), ""
+            return True, 0, "\n".join(out) + ("\n" if out else ""), "", refused
         except Exception as e:  # noqa: BLE001
             return False, 1, "", f"{type(e).__name__}: {e}", ""
     if tool == "directory_tree":
@@ -266,7 +266,7 @@ def collect(call):
                 out.append(("  " * depth) + (os.path.basename(full) if rel == "." else os.path.basename(root)))
                 for fn in sorted(files):
                     out.append(("  " * (depth + 1)) + fn)
-            return True, 0, "\n".join(out) + "\n", ""
+            return True, 0, "\n".join(out) + "\n", "", refused
         except Exception as e:  # noqa: BLE001
             return False, 1, "", f"{type(e).__name__}: {e}", ""
     if tool == "search_files":
@@ -281,7 +281,7 @@ def collect(call):
         try:
             full = _resolve(p)
             kind = "dir" if os.path.isdir(full) else "file"
-            return True, 0, f"{p}: {kind}, {os.path.getsize(full)} bytes", ""
+            return True, 0, f"{p}: {kind}, {os.path.getsize(full)} bytes", "", refused
         except Exception as e:  # noqa: BLE001
             return False, 1, "", f"{type(e).__name__}: {e}", ""
     return False, -1, "", "", f"unsupported tool: {tool}"

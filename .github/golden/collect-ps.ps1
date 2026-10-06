@@ -47,18 +47,24 @@ foreach ($line in $lines) {
       } -ArgumentList $cmd, $soFile, $seFile
       $done = Wait-Job -Job $job -Timeout $TIMEOUT_S
       if ($done) {
-        $code = Receive-Job -Job $job
-        if ($null -eq $code) { $code = 1 }
+        $rawCode = Receive-Job -Job $job
+        # Receive-Job as vezes devolve PSObject embrulhado ({value, PSComputerName...}): normaliza.
+        if ($rawCode -is [int]) { $code = $rawCode }
+        elseif ($null -ne $rawCode.value) { $code = [int]$rawCode.value }
+        elseif ($null -eq $rawCode) { $code = 1 } else { $code = 1 }
         $ok = ($code -eq 0)
       } else {
         $code = 124
         $se = "TIMEOUT (> ${TIMEOUT_S}s)"
       }
-      $so = Get-Content -LiteralPath $soFile -Raw -Encoding UTF8 -ErrorAction SilentlyContinue
-      if ($null -eq $so) { $so = "" }
+      $soRaw = Get-Content -LiteralPath $soFile -Raw -Encoding UTF8 -ErrorAction SilentlyContinue
+      # Get-Content as vezes devolve objeto embrulhado ({value, PSPath...}): normaliza p/ texto.
+      if ($soRaw -is [string]) { $so = $soRaw }
+      elseif ($null -ne $soRaw.value) { $so = [string]$soRaw.value } else { $so = "" }
       if (-not $se) {
-        $se = Get-Content -LiteralPath $seFile -Raw -Encoding UTF8 -ErrorAction SilentlyContinue
-        if ($null -eq $se) { $se = "" }
+        $seRaw = Get-Content -LiteralPath $seFile -Raw -Encoding UTF8 -ErrorAction SilentlyContinue
+        if ($seRaw -is [string]) { $se = $seRaw }
+        elseif ($null -ne $seRaw.value) { $se = [string]$seRaw.value } else { $se = "" }
       }
     } catch {
       $code = 1

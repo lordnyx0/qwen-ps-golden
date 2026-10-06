@@ -34,18 +34,23 @@ foreach ($line in $lines) {
   } elseif ($BLOCK.IsMatch($cmd)) {
     $refused = "REFUSED by collector blocklist"
   } else {
+    # Job + filho powershell com redirect: exit via $LASTEXITCODE (Start-Process .ExitCode
+    # volta nulo no Windows PowerShell 5.1). Timeout via Wait-Job.
     $soFile = [System.IO.Path]::GetTempFileName()
     $seFile = [System.IO.Path]::GetTempFileName()
+    $job = $null
     try {
-      $p = Start-Process -FilePath "powershell" `
-        -ArgumentList @("-NoProfile", "-NonInteractive", "-Command", $cmd) `
-        -NoNewWindow -PassThru `
-        -RedirectStandardOutput $soFile -RedirectStandardError $seFile
-      if ($p.WaitForExit($TIMEOUT_S * 1000)) {
-        $code = $p.ExitCode
+      $job = Start-Job -ScriptBlock {
+        param($c, $so, $se)
+        & powershell -NoProfile -NonInteractive -Command $c > $so 2> $se
+        return $LASTEXITCODE
+      } -ArgumentList $cmd, $soFile, $seFile
+      $done = Wait-Job -Job $job -Timeout $TIMEOUT_S
+      if ($done) {
+        $code = Receive-Job -Job $job
+        if ($null -eq $code) { $code = 1 }
         $ok = ($code -eq 0)
       } else {
-        try { $p.Kill() } catch { }
         $code = 124
         $se = "TIMEOUT (> ${TIMEOUT_S}s)"
       }
@@ -59,6 +64,7 @@ foreach ($line in $lines) {
       $code = 1
       $se = ("{0}: {1}" -f $_.GetType().Name, $_.Message)
     } finally {
+      if ($null -ne $job) { Stop-Job -Job $job -ErrorAction SilentlyContinue; Remove-Job -Job $job -Force -ErrorAction SilentlyContinue }
       Remove-Item -LiteralPath $soFile -Force -ErrorAction SilentlyContinue
       Remove-Item -LiteralPath $seFile -Force -ErrorAction SilentlyContinue
     }

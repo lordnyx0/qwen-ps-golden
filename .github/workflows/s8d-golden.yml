@@ -1,0 +1,41 @@
+# s8d-golden.yml — coleta S8d (singles shell: bare originais + fixtures novas).
+name: s8d-golden
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  ps-golden:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/golden
+          sparse-checkout-cone-mode: false
+      - name: Collect S8d PowerShell goldens
+        shell: powershell
+        run: |
+          powershell -NoProfile -NonInteractive -ExecutionPolicy Bypass -File .github/golden/collect-ps.ps1 -Calls .github/golden/s8d/ps_calls.jsonl -Out .github/golden/out/s8d_ps_results.jsonl
+      - uses: actions/upload-artifact@v4
+        with:
+          name: s8d_ps_results
+          path: .github/golden/out/s8d_ps_results.jsonl
+          retention-days: 30
+
+  bash-golden:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/golden
+          sparse-checkout-cone-mode: false
+      - name: Collect S8d bash goldens
+        shell: bash
+        run: python3 .github/golden/collect-bash.py --calls .github/golden/s8d/bash_calls.jsonl --out .github/golden/out/s8d_bash_results.jsonl
+      - uses: actions/upload-artifact@v4
+        with:
+          name: s8d_bash_results
+          path: .github/golden/out/s8d_bash_results.jsonl
+          retention-days: 30

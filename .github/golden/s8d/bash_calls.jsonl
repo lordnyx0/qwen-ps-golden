@@ -1,0 +1,45 @@
+{"uuid": "s8d_ba_01", "idx": 0, "tool": "bash", "arguments": {"command": "du --max-depth=1 /var/log"}}
+{"uuid": "s8d_ba_02", "idx": 0, "tool": "bash", "arguments": {"command": "df -h /var/data"}}
+{"uuid": "s8d_ba_03", "idx": 0, "tool": "bash", "arguments": {"command": "wc -l /var/log/nginx/access.log"}}
+{"uuid": "s8d_ba_04", "idx": 0, "tool": "bash", "arguments": {"command": "find /var/backups -mtime -1"}}
+{"uuid": "s8d_ba_05", "idx": 0, "tool": "bash", "arguments": {"command": "ps aux --sort=-%cpu | head -n 5"}}
+{"uuid": "s8d_ba_06", "idx": 0, "tool": "bash", "arguments": {"command": "df -h /"}}
+{"uuid": "s8d_ba_07", "idx": 0, "tool": "bash", "arguments": {"command": "ps aux --sort=-%mem | head -n 3"}}
+{"uuid": "s8d_ba_08", "idx": 0, "tool": "bash", "arguments": {"command": "ls logs"}}
+{"uuid": "s8d_ba_09", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -pv work/ziblok && ls work"}}
+{"uuid": "s8d_ba_10", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -pv work/quenfar && ls work"}}
+{"uuid": "s8d_ba_11", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -pv work/moptil && ls work"}}
+{"uuid": "s8d_ba_12", "idx": 0, "tool": "bash", "arguments": {"command": "ls logs"}}
+{"uuid": "s8d_ba_13", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -pv work/zelvok && ls work"}}
+{"uuid": "s8d_ba_14", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -pv work/quimbek && ls work"}}
+{"uuid": "s8d_ba_15", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -pv work/trazel && ls work"}}
+{"uuid": "s8d_ba_16", "idx": 0, "tool": "bash", "arguments": {"command": "ls -a api"}}
+{"uuid": "s8d_ba_17", "idx": 0, "tool": "bash", "arguments": {"command": "ls -R api"}}
+{"uuid": "s8d_ba_18", "idx": 0, "tool": "bash", "arguments": {"command": "find deep"}}
+{"uuid": "s8d_ba_19", "idx": 0, "tool": "bash", "arguments": {"command": "tail logs3/app-12.log"}}
+{"uuid": "s8d_ba_20", "idx": 0, "tool": "bash", "arguments": {"command": "ls -a lib"}}
+{"uuid": "s8d_ba_21", "idx": 0, "tool": "bash", "arguments": {"command": "find deep"}}
+{"uuid": "s8d_ba_22", "idx": 0, "tool": "bash", "arguments": {"command": "ls -a lib"}}
+{"uuid": "s8d_ba_23", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -pv work/quimbek && ls work"}}
+{"uuid": "s8d_ba_24", "idx": 0, "tool": "bash", "arguments": {"command": "ps aux --sort=-%mem | head -n 3"}}
+{"uuid": "s8d_ba_25", "idx": 0, "tool": "bash", "arguments": {"command": "find deep"}}
+{"uuid": "s8d_ba_26", "idx": 0, "tool": "bash", "arguments": {"command": "tail logs3/app-12.log"}}
+{"uuid": "s8d_ba_27", "idx": 0, "tool": "bash", "arguments": {"command": "df -h /var/data"}}
+{"uuid": "s8d_ba_28", "idx": 0, "tool": "bash", "arguments": {"command": "wc -l /var/log/nginx/access.log"}}
+{"uuid": "s8d_ba_29", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -pv work/trazel && ls work"}}
+{"uuid": "s8d_ba_30", "idx": 0, "tool": "bash", "arguments": {"command": "ls -R api"}}
+{"uuid": "s8d_ba_31", "idx": 0, "tool": "bash", "arguments": {"command": "find /var/backups -mtime -1"}}
+{"uuid": "s8d_ba_32", "idx": 0, "tool": "bash", "arguments": {"command": "stat -c '%s' /etc/hostname"}}
+{"uuid": "s8d_ba_33", "idx": 0, "tool": "bash", "arguments": {"command": "find /etc -maxdepth 1 -name 'hosts*'"}}
+{"uuid": "s8d_ba_34", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/g6sh05; echo 'build ok' | tee /tmp/g6sh05/out.txt"}}
+{"uuid": "s8d_ba_35", "idx": 0, "tool": "bash", "arguments": {"command": "printf 'run 7 ok\n' > /tmp/g6sh07/out.txt"}}
+{"uuid": "s8d_ba_36", "idx": 0, "tool": "bash", "arguments": {"command": "printf 'l1\n' > /tmp/g6sh08/f; echo 'l2' >> /tmp/g6sh08/f"}}
+{"uuid": "s8d_ba_37", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/g6sh09; mktemp -d /tmp/g6sh09.XXXX"}}
+{"uuid": "s8d_ba_38", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/g6sh10; fallocate -l 1K /tmp/g6sh10/place.bin"}}
+{"uuid": "s8d_ba_39", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/g6sh15; printf 'g6\n' > /tmp/g6sh15/manifest.txt"}}
+{"uuid": "s8d_ba_40", "idx": 0, "tool": "bash", "arguments": {"command": "cp /etc/hostname /tmp/g6sh16/h; echo '# g6' >> /tmp/g6sh16/h"}}
+{"uuid": "s8d_ba_f01", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8d01/posts; echo hello-post > /tmp/s8d01/posts/hello.md; echo release-notes > /tmp/s8d01/posts/release.md; cat /tmp/s8d01/posts/hello.md; cat /tmp/s8d01/posts/release.md"}}
+{"uuid": "s8d_ba_f02", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8d02; printf 'a,b\\n1,2\\n3,4\\n' > /tmp/s8d02/part.csv; head -n 2 /tmp/s8d02/part.csv"}}
+{"uuid": "s8d_ba_f03", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8d03; echo one > /tmp/s8d03/a.txt; echo two > /tmp/s8d03/b.txt; wc /tmp/s8d03/a.txt /tmp/s8d03/b.txt"}}
+{"uuid": "s8d_ba_f04", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8d04; touch /tmp/s8d04/keep; find /tmp/s8d04 -type f"}}
+{"uuid": "s8d_ba_f05", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8d05/src; echo TODO-fix > /tmp/s8d05/src/main.py; grep -r TODO /tmp/s8d05"}}

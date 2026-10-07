@@ -1,0 +1,29 @@
+{"uuid": "s8e_ps_01", "idx": 0, "tool": "powershell", "arguments": {"command": "new-item -path $env:TEMP\\s8e\\logs,$env:TEMP\\s8e\\incoming,$env:TEMP\\s8e\\configs,$env:TEMP\\s8e\\archive,$env:TEMP\\s8e\\reports,$env:TEMP\\s8e\\blog,$env:TEMP\\s8e\\bigdata,$env:TEMP\\s8e\\nest,$env:TEMP\\s8e\\srv,$env:TEMP\\s8e\\lib,$env:TEMP\\s8e\\api,$env:TEMP\\s8e\\notes,$env:TEMP\\s8e\\csv,$env:TEMP\\s8e\\deep -itemtype directory -force; get-childitem -path $env:TEMP\\s8e"}}
+{"uuid": "s8e_ps_02", "idx": 0, "tool": "powershell", "arguments": {"command": "set-content -path $env:TEMP\\s8e\\bigdata\\part_00.csv -value id,name; add-content -path $env:TEMP\\s8e\\bigdata\\part_00.csv -value 1,alpha; add-content -path $env:TEMP\\s8e\\bigdata\\part_00.csv -value 2,beta; get-content -path $env:TEMP\\s8e\\bigdata\\part_00.csv"}}
+{"uuid": "s8e_ps_03", "idx": 0, "tool": "powershell", "arguments": {"command": "set-content -path $env:TEMP\\s8e\\bigdata\\part_01.csv -value id,name; add-content -path $env:TEMP\\s8e\\bigdata\\part_01.csv -value 3,gamma; get-content -path $env:TEMP\\s8e\\bigdata\\part_01.csv"}}
+{"uuid": "s8e_ps_04", "idx": 0, "tool": "powershell", "arguments": {"command": "set-content -path $env:TEMP\\s8e\\blog\\hello.md -value hello-post; set-content -path $env:TEMP\\s8e\\blog\\release.md -value release-notes; get-content -path $env:TEMP\\s8e\\blog\\hello.md"}}
+{"uuid": "s8e_ps_05", "idx": 0, "tool": "powershell", "arguments": {"command": "set-content -path $env:TEMP\\s8e\\notes\\todo.txt -value TODO-fix-parser; add-content -path $env:TEMP\\s8e\\notes\\todo.txt -value TODO-add-tests; get-content -path $env:TEMP\\s8e\\notes\\todo.txt"}}
+{"uuid": "s8e_ps_06", "idx": 0, "tool": "powershell", "arguments": {"command": "set-content -path $env:TEMP\\s8e\\csv\\sales.csv -value region,amount; add-content -path $env:TEMP\\s8e\\csv\\sales.csv -value north,10; get-content -path $env:TEMP\\s8e\\csv\\sales.csv"}}
+{"uuid": "s8e_ps_07", "idx": 0, "tool": "powershell", "arguments": {"command": "set-content -path $env:TEMP\\s8e\\logs\\app.log -value started; add-content -path $env:TEMP\\s8e\\logs\\app.log -value running; get-content -path $env:TEMP\\s8e\\logs\\app.log"}}
+{"uuid": "s8e_ps_08", "idx": 0, "tool": "powershell", "arguments": {"command": "set-content -path $env:TEMP\\s8e\\srv\\svc.txt -value srv-ok; set-content -path $env:TEMP\\s8e\\lib\\mod.txt -value lib-ok; set-content -path $env:TEMP\\s8e\\api\\ep.txt -value api-ok; set-content -path $env:TEMP\\s8e\\nest\\n.txt -value nest-ok; get-childitem -path $env:TEMP\\s8e\\srv"}}
+{"uuid": "s8e_ps_09", "idx": 0, "tool": "powershell", "arguments": {"command": "get-childitem -path $env:TEMP\\s8e\\logs"}}
+{"uuid": "s8e_ps_10", "idx": 0, "tool": "powershell", "arguments": {"command": "get-childitem -path $env:TEMP\\s8e\\incoming"}}
+{"uuid": "s8e_ps_11", "idx": 0, "tool": "powershell", "arguments": {"command": "get-childitem -path $env:TEMP\\s8e\\configs"}}
+{"uuid": "s8e_ps_12", "idx": 0, "tool": "powershell", "arguments": {"command": "get-childitem -path $env:TEMP\\s8e\\archive"}}
+{"uuid": "s8e_ps_13", "idx": 0, "tool": "powershell", "arguments": {"command": "get-childitem -path $env:TEMP\\s8e\\reports"}}
+{"uuid": "s8e_ps_14", "idx": 0, "tool": "powershell", "arguments": {"command": "get-childitem -path $env:TEMP\\s8e\\blog"}}
+{"uuid": "s8e_ps_15", "idx": 0, "tool": "powershell", "arguments": {"command": "get-childitem -path $env:TEMP\\s8e\\bigdata"}}
+{"uuid": "s8e_ps_16", "idx": 0, "tool": "powershell", "arguments": {"command": "get-childitem -path $env:TEMP\\s8e\\nest"}}
+{"uuid": "s8e_ps_17", "idx": 0, "tool": "powershell", "arguments": {"command": "get-childitem -path $env:TEMP\\s8e\\srv"}}
+{"uuid": "s8e_ps_18", "idx": 0, "tool": "powershell", "arguments": {"command": "get-childitem -path $env:TEMP\\s8e\\lib"}}
+{"uuid": "s8e_ps_19", "idx": 0, "tool": "powershell", "arguments": {"command": "get-childitem -path $env:TEMP\\s8e\\api"}}
+{"uuid": "s8e_ps_20", "idx": 0, "tool": "powershell", "arguments": {"command": "get-childitem -path $env:TEMP\\s8e\\deep"}}
+{"uuid": "s8e_ps_21", "idx": 0, "tool": "powershell", "arguments": {"command": "get-content -path $env:TEMP\\s8e\\bigdata\\part_00.csv | measure-object -line | select-object -expandproperty lines"}}
+{"uuid": "s8e_ps_22", "idx": 0, "tool": "powershell", "arguments": {"command": "get-content -path $env:TEMP\\s8e\\bigdata\\part_00.csv | measure-object -line | select-object -expandproperty lines; get-content -path $env:TEMP\\s8e\\bigdata\\part_01.csv | measure-object -line | select-object -expandproperty lines"}}
+{"uuid": "s8e_ps_23", "idx": 0, "tool": "powershell", "arguments": {"command": "select-string -path $env:TEMP\\s8e\\notes\\todo.txt -pattern TODO"}}
+{"uuid": "s8e_ps_24", "idx": 0, "tool": "powershell", "arguments": {"command": "select-string -path $env:TEMP\\s8e\\notes\\todo.txt -pattern TODO | measure-object -line | select-object -expandproperty lines"}}
+{"uuid": "s8e_ps_25", "idx": 0, "tool": "powershell", "arguments": {"command": "get-childitem -path $env:TEMP\\s8e\\bigdata; get-childitem -path $env:TEMP\\s8e\\blog"}}
+{"uuid": "s8e_ps_26", "idx": 0, "tool": "powershell", "arguments": {"command": "get-content -path $env:TEMP\\s8e\\csv\\sales.csv -totalcount 2"}}
+{"uuid": "s8e_ps_27", "idx": 0, "tool": "powershell", "arguments": {"command": "get-content -path $env:TEMP\\s8e\\logs\\app.log -totalcount 1"}}
+{"uuid": "s8e_ps_28", "idx": 0, "tool": "powershell", "arguments": {"command": "test-path -path $env:TEMP\\s8e\\blog\\hello.md"}}
+{"uuid": "s8e_ps_29", "idx": 0, "tool": "powershell", "arguments": {"command": "get-item -path $env:TEMP\\s8e\\bigdata\\part_00.csv | select-object -expandproperty length"}}

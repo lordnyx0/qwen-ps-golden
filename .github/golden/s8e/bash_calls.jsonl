@@ -1,0 +1,28 @@
+{"uuid": "s8e_ba_01", "idx": 0, "tool": "bash", "arguments": {"command": "mkdir -p /tmp/s8e/logs /tmp/s8e/incoming /tmp/s8e/configs /tmp/s8e/archive /tmp/s8e/reports /tmp/s8e/blog /tmp/s8e/bigdata /tmp/s8e/nest /tmp/s8e/srv /tmp/s8e/lib /tmp/s8e/api /tmp/s8e/notes /tmp/s8e/csv /tmp/s8e/deep; ls /tmp/s8e"}}
+{"uuid": "s8e_ba_02", "idx": 0, "tool": "bash", "arguments": {"command": "printf 'id,name\\n1,alpha\\n2,beta\\n' > /tmp/s8e/bigdata/part_00.csv; printf 'id,name\\n3,gamma\\n' > /tmp/s8e/bigdata/part_01.csv; cat /tmp/s8e/bigdata/part_00.csv"}}
+{"uuid": "s8e_ba_03", "idx": 0, "tool": "bash", "arguments": {"command": "echo hello-post > /tmp/s8e/blog/hello.md; echo release-notes > /tmp/s8e/blog/release.md; cat /tmp/s8e/blog/hello.md; cat /tmp/s8e/blog/release.md"}}
+{"uuid": "s8e_ba_04", "idx": 0, "tool": "bash", "arguments": {"command": "echo TODO-fix > /tmp/s8e/notes/todo.txt; echo TODO-tests >> /tmp/s8e/notes/todo.txt; cat /tmp/s8e/notes/todo.txt"}}
+{"uuid": "s8e_ba_05", "idx": 0, "tool": "bash", "arguments": {"command": "printf 'region,amount\\nnorth,10\\n' > /tmp/s8e/csv/sales.csv; printf 'region,amount\\nsouth,20\\n' > /tmp/s8e/csv/regions.csv; cat /tmp/s8e/csv/sales.csv"}}
+{"uuid": "s8e_ba_06", "idx": 0, "tool": "bash", "arguments": {"command": "echo started > /tmp/s8e/logs/app.log; echo running >> /tmp/s8e/logs/app.log; echo stopped >> /tmp/s8e/logs/app.log; cat /tmp/s8e/logs/app.log"}}
+{"uuid": "s8e_ba_07", "idx": 0, "tool": "bash", "arguments": {"command": "ls /tmp/s8e/logs"}}
+{"uuid": "s8e_ba_08", "idx": 0, "tool": "bash", "arguments": {"command": "ls /tmp/s8e/incoming"}}
+{"uuid": "s8e_ba_09", "idx": 0, "tool": "bash", "arguments": {"command": "ls /tmp/s8e/configs"}}
+{"uuid": "s8e_ba_10", "idx": 0, "tool": "bash", "arguments": {"command": "ls /tmp/s8e/archive"}}
+{"uuid": "s8e_ba_11", "idx": 0, "tool": "bash", "arguments": {"command": "ls /tmp/s8e/reports"}}
+{"uuid": "s8e_ba_12", "idx": 0, "tool": "bash", "arguments": {"command": "ls /tmp/s8e/blog"}}
+{"uuid": "s8e_ba_13", "idx": 0, "tool": "bash", "arguments": {"command": "ls /tmp/s8e/bigdata"}}
+{"uuid": "s8e_ba_14", "idx": 0, "tool": "bash", "arguments": {"command": "ls /tmp/s8e/nest"}}
+{"uuid": "s8e_ba_15", "idx": 0, "tool": "bash", "arguments": {"command": "ls /tmp/s8e/srv"}}
+{"uuid": "s8e_ba_16", "idx": 0, "tool": "bash", "arguments": {"command": "ls /tmp/s8e/lib"}}
+{"uuid": "s8e_ba_17", "idx": 0, "tool": "bash", "arguments": {"command": "ls /tmp/s8e/api"}}
+{"uuid": "s8e_ba_18", "idx": 0, "tool": "bash", "arguments": {"command": "ls /tmp/s8e/deep"}}
+{"uuid": "s8e_ba_19", "idx": 0, "tool": "bash", "arguments": {"command": "find /tmp/s8e/blog -type f"}}
+{"uuid": "s8e_ba_20", "idx": 0, "tool": "bash", "arguments": {"command": "head -n 2 /tmp/s8e/bigdata/part_00.csv"}}
+{"uuid": "s8e_ba_21", "idx": 0, "tool": "bash", "arguments": {"command": "wc /tmp/s8e/bigdata/part_00.csv /tmp/s8e/bigdata/part_01.csv"}}
+{"uuid": "s8e_ba_22", "idx": 0, "tool": "bash", "arguments": {"command": "wc -l /tmp/s8e/csv/sales.csv /tmp/s8e/csv/regions.csv"}}
+{"uuid": "s8e_ba_23", "idx": 0, "tool": "bash", "arguments": {"command": "grep -r TODO /tmp/s8e/notes"}}
+{"uuid": "s8e_ba_24", "idx": 0, "tool": "bash", "arguments": {"command": "ls -R /tmp/s8e/api; ls -R /tmp/s8e/srv"}}
+{"uuid": "s8e_ba_25", "idx": 0, "tool": "bash", "arguments": {"command": "tail -n 2 /tmp/s8e/logs/app.log"}}
+{"uuid": "s8e_ba_26", "idx": 0, "tool": "bash", "arguments": {"command": "ls -a /tmp/s8e/lib; ls -a /tmp/s8e/srv"}}
+{"uuid": "s8e_ba_27", "idx": 0, "tool": "bash", "arguments": {"command": "test -f /tmp/s8e/blog/hello.md && echo post-ok"}}
+{"uuid": "s8e_ba_28", "idx": 0, "tool": "bash", "arguments": {"command": "du -sh /tmp/s8e"}}
